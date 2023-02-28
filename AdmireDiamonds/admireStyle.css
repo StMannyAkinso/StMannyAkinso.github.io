@@ -1,0 +1,851 @@
+/* ------------------------------------------------------------------ */
+/* */
+body{
+
+    overflow-x: hidden;
+    padding-top: 4%;
+    background-color: #f0f0e8;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+a {         
+    color: #B5A386;                          
+    border: none;
+    text-decoration: none;
+    font-family:'Black Mango W05 SemiBold' , 'fallback-font';
+}
+.flexSlider::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  
+.flexSlider::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  }
+/* ------------------------------------------------------------------ */
+/* Fonts */
+h1{    
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family:'Black Mango W05 SemiBold' , 'fallback-font';
+    color: #B5A386;
+}
+h2{
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family:'Black Mango W05 SemiBold' , 'fallback-font';
+    color: #B5A386;
+}
+h3{
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family:'Black Mango W05 SemiBold' , 'fallback-font';
+    color: #B5A386;
+}
+h3 .fa{
+    color: #B5A386;
+}
+h4{
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family:'Black Mango W05 SemiBold' , 'fallback-font';
+    color: #B5A386;
+}
+h5{
+    text-align: center;
+    font-family: sans-serif;
+    color:rgba(0, 0, 0, 0.292);
+}
+p{
+    font-size: 1.15vw;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #7468548b;
+}
+
+/* ------------------------------------------------------------------ */
+/* Header */
+header{
+    font-family: sans-serif;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f0f0e8;
+    border-bottom: solid 3px #d2d2c8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+
+}
+header:hover{
+    /* border: 2px solid black;  */
+    background-color: #f0f0e8;
+}
+.menuIcons{
+    position: absolute;
+    right:-5%;
+    top: 0;
+   height: 100%;
+   min-width: 30%;
+   
+}
+
+header button{
+    color: #B5A386; 
+    font-family:'Black Mango W05 SemiBold' , 'fallback-font';
+    background-color: transparent;
+    border-style: none;
+    height: 100%;
+    width: 20%;
+    transition: ease-in-out 0.3s;
+
+}
+header button:hover{
+   cursor: pointer;
+   background-color: white;
+}
+.logoHeader{
+    cursor: pointer;
+    height: 90%;
+    width: 5%;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    
+}
+.logoHeader img{
+    max-height: 100%;
+}
+.logoTitle{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    bottom: 60px;
+}
+.logoTitle img{
+    height: 100%;
+}
+
+
+select{
+    background-color: blue;
+   border: none;
+}
+textarea{
+    padding: 2%;
+    background: none;
+    color: #71716a;
+    font-size:medium;
+}
+blockquote{
+    margin: 3%;
+}
+
+/* ------------------------------------------------------------------ */
+/* Rows */
+.row{
+    height: 100vh;
+    margin-bottom: 1%;
+    padding: 1%;
+    margin-left: 10%; 
+    margin-right: 10%;
+    transition: ease-in 0.2s;
+    
+    overflow-x: hidden;
+   
+}
+.fullRow{
+    height: 100vh;
+    width: 100%;   
+    transition: ease-in 0.2s;
+   
+}
+.vertThirdRow{
+    height: 33vh;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+.horiHalfRow{
+    height: 50vh;
+    margin-bottom: 1%;
+    padding: 1%;
+    margin-left: 10%; 
+    margin-right: 10%;
+}
+/* Row Structures */
+.vertHalf{
+    height: 100%;
+    width: 50%;
+    transition: ease-in 0.2s;
+}
+.vertThird{
+    height: 100%;
+    width: 33%;
+    transition: ease-in 0.2s;
+}
+.horiHalf{
+    height: 50%;
+    width: 100%;
+    transition: ease-in 0.2s;
+}
+.horiThird{
+    height: 33%;
+    width: 100%;
+    transition: ease-in 0.2s;
+}
+
+/* Flex */
+.flexContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexColumn{
+    position: relative;
+    padding: 1%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flexSlider{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.flexSlider .flexColumn{
+    scroll-snap-align: start;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.flexWrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ------------------------------------------------------------------ */
+/* Containers */
+.container{
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+.btnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.textboxStatic{
+    padding: 4%;
+    margin: 3%;
+}
+.textbox{
+    background-color: transparent;
+    padding: 4%;
+    margin: 3%;
+    overflow-y: scroll;
+    transition: ease-in 0.3s;
+}
+.textbox:hover{
+    
+    transform: scale(1.1);
+   
+}
+.textbox:hover .vertHalf{
+    border-style: none;
+}
+.textbox p{
+    font-size: 14px;
+}
+.imagebox{
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.storyContainer{
+    width: 100%;
+    height:20%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.storyContainer p{
+    position: absolute;
+    bottom: 0;
+    right: 25%;   
+}
+
+/* ------------------------------------------------------------------ */
+/* Cards */
+.card
+{
+    background-color: #f6f6ec;
+    display: flex;
+    border:#babab1 2px solid;
+    box-shadow: 10px 10px 10px #babab1;
+    transition: ease-in 0.2s;
+    font-size: auto;
+}
+.reviewCard
+{
+    max-height: 80%;
+    min-width: 33%;
+    position: relative;
+    padding: 2%;
+    background-color: #f6f6ec;
+    transition: ease-in 0.2s;
+    font-size: auto;
+    overflow-y: scroll;
+}
+.card:hover
+{
+    transform: scale(1.1);
+}
+.horiHalfRow .card
+{
+    margin: 1%;
+border: none;
+height: 90%;
+width: 30%;
+
+}
+
+.flexWrapper .reviewCard{
+    height: 35%;
+    width: 35%;
+    margin: 3%;
+}
+.flexWrapper .reviewCard p{
+   
+    margin-bottom: 20%;
+}
+/* ------------------------------------------------------------------ */
+/* Banners */
+
+.bottomBanner{
+width: 100%;
+height: 30%;
+position: absolute;
+bottom: 0;
+left:0;
+display: none;
+transition: all ease-in 0.2s;
+
+}
+.container:hover .bottomBanner{
+    
+    display: block;
+   
+    border-top: 2px solid #babab1;
+}
+.topBanner{
+    background-color: beige;
+}
+
+/* ------------------------------------------------------------------ */
+/* Buttons */
+form {
+    font-family: sans-serif;
+    color: #98988f;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.enquiryForm input{
+    margin-bottom: 4%;
+    height: 7%;
+    width: 90%;
+    background: none;
+    border: none;
+    border-bottom: #98988f 2px solid;
+}
+label{
+    margin: 2%;
+}
+.pagebtn{
+    padding: 13px 20px;
+    color: #98988f;
+    text-decoration: none;
+    position: relative;
+    background: transparent;
+    border: 2px solid #b3b3a9;
+    font: 12px/1.2 sans-serif;
+    letter-spacing: 0.4em;
+    text-align: center;
+    text-indent: 2px;
+    text-transform: uppercase;
+    margin: 1%;
+    transition: ease-in-out 0.3s;
+    box-shadow: 5px 5px 2px #d2d2c8;
+}
+.pagebtn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.navBtn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 6;
+    font-size: xx-large;
+}
+.navBtn .fas{
+    transition: ease-in 0.2s;
+}
+.navBtn .fas:hover{
+    transform: scale(2);
+}
+
+.highlightsBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1%;
+    cursor: pointer;
+    border: none;
+    background-color:#f0f0e8;
+    position: fixed;
+    right: 2%;
+    top: 11%;
+    height: 10%;
+    width: 5%;
+    z-index: 10;
+    transition: ease-in 0.2s;
+    
+}
+
+.highlightsBtn .fa{
+    font-size: 30px ;
+}
+/* ------------------------------------------------------------------ */
+/* Slideshow */
+  
+  .slideBtn{
+    display: inline-block;
+    padding: 13px 20px;
+    color: #f9f9ec;
+    text-decoration: none;
+    position: relative;
+    background: transparent;
+    border: 1px solid #98988f;
+    font: 12px/1.2 "Oswald", sans-serif;
+    letter-spacing: 0.4em;
+    text-align: center;
+    text-indent: 2px;
+    text-transform: uppercase;
+    transition: color 0.1s linear 0.05s;
+  }
+  .slideBtn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #f9f9ec;
+    z-index: 1;
+    opacity: 0;
+    transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
+  }
+  .slideBtn::after {
+    transition: border 0.1s linear 0.05s;
+  }
+  .slideBtn .btn-inner {
+    position: relative;
+    z-index: 2;
+  }
+  .slideBtn:hover {
+    color: #373737;
+    transition: color 0.1s linear 0s;
+  }
+  .slideBtn:hover::before {
+    top: 0;
+    height: 100%;
+    opacity: 1;
+    transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+  }
+  .slideBtn:hover::after {
+    border-color: #373737;
+    transition: border 0.1s linear 0s;
+  }
+  
+  .slideshow {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+  }
+  .slideshow .slideshow-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .slideshow .slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 1;
+  }
+  .slideshow .slide {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .slideshow .slide.is-active {
+    display: block;
+  }
+  .slideshow .slide.is-loaded {
+    opacity: 1;
+  }
+  .slideshow .slide .caption {
+    padding: 0 100px;
+  }
+  .slideshow .slide .image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    z-index: 1;
+    background-size: cover;
+    image-rendering: optimizeQuality;
+  }
+  .slideshow .slide .image-container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .slideshow .slide .image {
+    width: 100%;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+  .slideshow .slide-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slideshow .slide .title {
+    color: #f0f0e8;
+    margin: 0 auto 15px;
+    max-width: 1000px;
+    font: 300 50px/1.2 'Black Mango W05 SemiBold' , 'fallback-font';
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+  }
+  .slideshow .slide .text {
+    margin: 0 auto;
+    max-width: 1000px;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  .slideshow .slide .text p {
+    color:#f0f0e8;
+}
+  .slideshow .slide .slideBtn {
+    margin: 15px 0 0;
+    border-color:#f0f0e8;
+  }
+  .slideshow .slide .slideBtn::before {
+    background: #f9f9ec;
+  }
+  .slideshow .pagination {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    cursor: default;
+    z-index: 2;
+    text-align: center;
+  }
+  .slideshow .pagination .item {
+    display: inline-block;
+    padding: 15px 5px;
+    position: relative;
+    width: 46px;
+    height: 32px;
+    cursor: pointer;
+    text-indent: -999em;
+    z-index: 1;
+  }
+  .slideshow .pagination .item + .page {
+    margin-left: -2px;
+  }
+  .slideshow .pagination .item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 36px;
+    height: 2px;
+    background: #B5A386;
+    transition: background 0.2s ease;
+  }
+  .slideshow .pagination .item::after {
+    width: 0;
+    background:#B5A386;
+    z-index: 2;
+    transition: width 0.2s ease;
+  }
+  .slideshow .pagination .item:hover::before, .slideshow .pagination .item.is-active::before {
+    background-color:  #f9f9ec;
+  }
+  .slideshow .arrows .arrow {
+    margin: -33px 0 0;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .slideshow .arrows .prev {
+    left: 30px;
+  }
+  .slideshow .arrows .prev:hover .svg {
+    left: -10px;
+  }
+  .slideshow .arrows .next {
+    right: 30px;
+  }
+  .slideshow .arrows .next:hover .svg {
+    left: 10px;
+  }
+  .slideshow .arrows .svg {
+    position: relative;
+    left: 0;
+    width: 14px;
+    height: 26px;
+    fill:  #B5A386;
+    transition: left 0.2s ease;
+  }
+
+.profilePhoto{
+    margin: 1%;
+   width: 40%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    
+}
+.profilePhoto:hover{
+    transform: scale(1.1);
+}
+
+/* ------------------------------------------------------------------ */
+/* Footer */
+footer {
+    margin-top: 5%;
+    line-height: smaller;
+}
+ footer .fa{
+    font-size: 30px;
+    color: #babab1;
+  }
+  footer p{
+    border: #373737 solid 2px;
+  }
+ footer .card{
+    background-color: #f0f0e8;
+    box-shadow: none;
+    border: none;
+    padding: 2%;
+    margin: 2%;
+    cursor: pointer;
+    transition: ease-in 0.2s;
+ }
+ footer .card:hover{
+   transform: scale(1.1);
+ }
+
+
+
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+
+/* Iphone */
+@media (max-width: 480px){
+      .horiHalfRow::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 2px;
+      }
+      
+    .horiHalfRow::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, .5);
+        box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+      }
+    .menuIcons{
+        position: absolute;
+        right:-12%;
+        width: 80%;
+    }
+    .menuIcons button{        
+        width: 20%;
+        font-size: medium;
+    }
+    .row{margin: 2%;}
+    .horiHalfRow{
+        margin-left: 0;
+        margin-right: 0;
+        overflow-x: scroll; 
+       min-width: 100%;
+        
+    }
+    .horiHalfRow .flexContainer{
+   justify-content: flex-start;
+  
+    }
+
+  .horiHalfRow .card
+   {
+    margin-right: 10px;
+    margin-left: 10%;
+    min-width: 80%;
+    }
+    .whitespaceHori{
+        min-width: 10%;
+        height: 100%;
+    }
+    .row .flexContainer{
+        flex-direction: column;
+    }
+.vertHalf{
+    width: 100%;
+    
+}
+.horiHalf{
+    width: 50%;
+ 
+}
+
+.card:hover
+{
+    transform: none;
+}
+.textbox:hover{
+    transform: none;
+}
+.slideshow .slide .title{
+    font-size: medium;
+}
+
+
+
+.logoTitle{
+    margin-top: 20%;
+} 
+
+.flexWrapper{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+.flexWrapper .reviewCard{
+    min-width: 50%;
+    height: 70%;
+}
+
+#processP{
+   width: 80%;
+   margin-bottom: 10%;
+}
+
+
+    #followUs.flexColumn{
+        margin-top: 70%;
+        display: flex;
+        flex-direction: row;
+     
+    }
+
+    #igPosts.vertHalf{
+        margin-top: 50%;
+       
+    }
+    #manufactureTextbox.textbox{
+        overflow-y: hidden;
+    }
+    .flexSlider .flexColumn{
+   
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    footer{
+        margin-top: 100%;
+    }
+    footer p{
+        font-size:xx-small;
+    }
+    footer .vertThird{
+        overflow-x: hidden;
+    }
+}
