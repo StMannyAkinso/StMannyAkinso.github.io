@@ -11,7 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
   </head>
-  <body>
+  <body id="enquiryBody">
     <header>
       <div class="container">
         <div class="logoHeader">
@@ -35,9 +35,9 @@
     </header>
 
     <!-- Form -->
-    <div class="row" style="margin-top: 5%">
+    <div class="row" style="margin-top: 5%" id="formRow">
       <div class="flexContainer">
-        <div class="vertHalf">
+        <div class="vertHalf" id="enquiryFormHalf">
           <h2>Get in Touch</h2>
           <p>Enquire with Admire today!</p>
 
@@ -65,26 +65,26 @@
               placeholder="Your email address.."
             />
 
-            <label for="budget">Budget (£)</label>
+            <label for="number">Phone Number</label>
+            <input
+              type="text"
+              id="number"
+              name="number"
+              placeholder="Your phone number.."
+            />
 
+            <label for="input-price">Budget (£)</label>
             <input
               id="input-price"
               class="form-control just-number price-format-input"
               placeholder="£"
             />
-
-            <label for="budget">Contact preference</label>
-            <select id="contact" name="country">
-              <option value="phone">Phone</option>
-              <option value="mail">Email</option>
-            </select>
-
             <label for="subject">Subject</label>
             <textarea
               id="subject"
               name="Do you prefer to be contacted via email or phone?"
               placeholder="Other comments.."
-              style="height: 200px"
+              style="height: 100%"
             ></textarea>
             <label for="checkbox">
               By clicking "Submit" I confirm that I agree to these
@@ -108,13 +108,14 @@
           </form>
         </div>
 
-        <div class="vertHalf"><div class="flexColumn"><img src="images/ringChampagne.jpeg" alt="" style="width: 100%;max-height:100%; border: 0.4rem solid #c4c4bc;"></div></div>
+        <div class="vertHalf" id="enquiryFormHalfPic"><div class="flexColumn"><img src="images/ringChampagne.jpeg" alt="" style="width: 100%;max-height:100%; border: 0.4rem solid #c4c4bc;"></div></div>
       </div>
     </div>
 
     <!-- Reviews -->
     <section style="margin-left:15%;
-    margin-right:15%">
+    margin-right:15%;
+    margin-top: 15%;" id="reviewSection">
       <div class="textbox" style="padding: 0%; margin-bottom: 0%;">
         <h4>
           Ismail <br /><i class="fa fa-star"></i><i class="fa fa-star"></i
@@ -222,21 +223,8 @@
     <!-- Follow us -->
     <div class="row">
       <div class="flexContainer">
-        <div class="vertHalf">
-          <div class="flexColumn">
-            <div class="horiHalf">
-              <div class="flexColumn">
-                <h2>
-                  Follow Us
-                  <i
-                    class="fab fa-instagram"
-                    style="color: #71716a; font-size: larger"
-                  ></i>
-                </h2>
-                <p>Keep up to date with all things Admire</p>
-                <button class="pagebtn">Connect</button>
-              </div>
-            </div>
+        <div class="vertHalf" id="vertToHori">
+          <div class="flexColumn" id="followUs">
             <div class="horiHalf">
               <div class="flexColumn">
                 <div class="profilePhoto">
@@ -246,17 +234,56 @@
                     alt=" "
                   />
                 </div>
-                <h3 style="font-size: larger">@AdmireDiamonds</h3>
+                <h4 style="font-size: larger; letter-spacing: normal; text-transform: none;  color: #7468548b;">@AdmireDiamonds</h4>
               </div>
             </div>
+            
+            <div class="horiHalf">
+              <div class="flexColumn" style=" justify-content: flex-start;">
+                <h2 style="text-transform: none;">
+                  Follow Us
+                  <i
+                    class="fab fa-instagram"
+                    style="font-size: larger"
+                  ></i>
+                </h2>
+                <p>Keep up to date with all things Admire</p>
+                <a
+                  href="https://www.instagram.com/admirediamonds/"
+                  target="_blank"
+                  ><button class="pagebtn">Connect</button></a
+                >
+              </div>
+            </div>
+            
           </div>
         </div>
-        <div class="vertHalf">
-          <div class="flexColumn">
-            <blockquote class="instagram-media" data-instgrm-version="14" style="max-height: 80%; width:80%">
-              <!-- replace this href with the link to the post -->
-              <a href="https://www.instagram.com/p/CbK88GsFPXT/"></a>
-            </blockquote>
+        <div class="vertHalf" id="igPosts">
+          <div class="flexSlider" style="scroll-snap-type: x mandatory">
+            <div class="flexColumn">
+              <blockquote class="instagram-media" data-instgrm-version="14">
+                <!-- replace this href with the link to the post -->
+                <a href="https://www.instagram.com/p/Cow10QGPQSX/"></a>
+              </blockquote>
+            </div>
+            <div class="flexColumn">
+              <blockquote class="instagram-media" data-instgrm-version="14">
+                <!-- replace this href with the link to the post -->
+                <a href="https://www.instagram.com/p/CbK88GsFPXT/"></a>
+              </blockquote>
+            </div>
+            <div class="flexColumn">
+              <blockquote class="instagram-media" data-instgrm-version="14">
+                <!-- replace this href with the link to the post -->
+                <a href="https://www.instagram.com/p/CkLFc_tMvdu/"></a>
+              </blockquote>
+            </div>
+            <div class="flexColumn">
+              <blockquote class="instagram-media" data-instgrm-version="14">
+                <!-- replace this href with the link to the post -->
+                <a href="https://www.instagram.com/p/ChxcMrfvk6Z/"></a>
+              </blockquote>
+            </div>
           </div>
         </div>
       </div>
@@ -265,26 +292,30 @@
     <!-- Footer -->
     <footer style="height: 30vh">
       <div class="flexContainer">
-        <div class="vertThird">
-          <div class="flexColumn">
-            <i class="fa fa-phone"></i>
-            <h4>Call Us</h4>
-            <p>44 777777</p>
-          </div>
-        </div>
-        <div class="vertThird">
+        
+        <div class="card">  <div class="flexColumn">
+          <i class="fa fa-phone"></i>
+          <h4>Call Us</h4>
+          <p>44 777777</p>
+        </div></div>
+
+        <div class="card">
           <div class="flexColumn">
             <i class="fa fa-user-friends"></i>
             <h4>Book Now</h4>
             <p>Book an appointment</p>
           </div>
         </div>
-        <div class="vertThird">
+
+        <div class="card">
           <div class="flexColumn">
             <i class="fa fa-envelope"></i>
             <h4>Email Us</h4>
             <p>admirediamonds@hotmail.com</p>
           </div>
+        </div>
+        
+
         </div>
       </div>
     </footer>
@@ -336,252 +367,4 @@
   </body>
 </html>
 
-<!-- Flex 
 
-Divulge in the opulence of Admire Diamonds, We create exceptionally crafted
-bespoke jewellery, tailored exactly to your desires.
-
-Admire Diamonds was founded by Imren Akkir in 2021 who has since worked
-extremely hard to build a prestigious luxury brand. Equipped with vast knowledge in the
-industry of diamonds and semi-precious stones, Imren has a vision to create exceptional bespoke
-jewellery, with the motion of providing luxury at value pricing.
-----------------------------------------------
-Our process…
-Enquiry
-
-Consultation &amp; Confirmation
-Book a personal consultation at your convenience with one of our expert team
-members. Explore the designs that catch your eye. We will guide you through
-the process of your bespoke design and discuss budget, desired specifications,
-and stone options. We will provide advice on prioritizing characteristics to help
-you confidently choose the perfect stone for your design and get the most value
-for your money.
-
-Design &amp; visualisation
-After your consultation, our design team will create a visualization for you to
-experience your design. We&#39;re here to offer advice and guidance on aesthetics,
-metal selection, and profiles to ensure a stunning, elegant finish. If you have any
-changes in mind, we&#39;ll be happy to update your design. Once you&#39;re fully
-satisfied with your custom design, we&#39;ll send it for production.
-
-Manufacture by artisans
-Once your design is approved, it will be sent to our team of expert artisans to
-bring your vision to life in our workshop. Using a combination of traditional
-techniques honed over generations and cutting-edge technology, these skilled
-craftsmen will handcraft your piece to meet your exact specifications. We&#39;ll
-notify you when your unique item is ready. Choose between delivery to you or
-in-store pickup based on your preference.
---------------
-
-We are proud to offer all the sparkle plus the sustainability
-                  of a more ethically sourced luxury stone. Our sources are
-                  eco-friendly with no mining, deforestation, environmental
-                  impacts, or unfair labour practices. Lab-grown diamonds are
-                  identical to mined diamonds in every aspect, except their
-                  origin. They're indistinguishable physically, chemically, and
-                  visually. Like natural diamonds, lab-grown diamonds also have
-                  their own unique characteristics, from clarity to colour.
-                  However, all of our lab-grown diamonds share one thing in
-                  common: exceptional beauty and quality. Our diamonds are
-                  certified based on the 4C's - Carat, Clarity, Color, and Cut -
-                  by gemological institutes such as the GIA. Lab-grown diamonds
-                  are more affordable, both for the planet and for consumers,
-                  costing up to 50% less than mined diamonds of the same grade.
-                  Our diamonds are responsibly sourced, and we can trace them
-                  back to the lab of origin, ensuring that no conflict diamonds
-                  are used in our jewellery.
-
-Terms &amp; Conditions
-PARTIES:
-Customer (“you” and “your”) and Admire Diamonds (“we”, “our” and “us”)
-
-USING OUR WEBSITE AND SECURITY
-By accessing and using our website www.admirediamonds.com, you are agreeing to
-be automatically bound by the current Terms and Conditions of use including any
-relevant laws of England and Wales. You are entirely responsible for any activity that
-occurs under your account login, which is given to you by Admire Diamonds. You
-agree that you will notify us immediately of any unauthorised use and/or any other
-breach of security during the use of our website. We will take further action in the
-event that there is misuse of our website.
-You must be aged 18 or over in order to use our website unless a parent or guardian
-is present with you, at all times in order to use our online retail services.
-
-PRIVACY POLICY AND DATA PROTECTION 
-Admire Diamonds gathers and uses your information in accordance with the UK
-General Data Protection Regulation (“UK GDPR”), the Data Protection Act 2018 and
-any UK related implementing legislation (“applicable data protection legislation”).
-Admire Diamonds will process your data securely and transparently in accordance
-with our policies. This policy applies to our customers ordering from outside of the
-UK as well i.e. all international orders processed on our website and other platforms
-such as Instagram.
-
-USER CONDUCT OF WEBSITE
-You agree to abide by all applicable local, state, national and international laws and
-regulations and are solely responsible for all acts or omissions that occur under your
-usage, including the content of your transmissions through our website. All
-information, designs, drawings, and other specifications on the website are the
-exclusive property of Admire Diamonds only. Any copying, transmission or re-
-transmission of the same requires the prior written approval of Admire Diamonds
-failing which the former is prohibited.
-
-ENTERING INTO A CONTRACT WITH US
-A contract between you and Admire Diamonds will only exist for a sale of our items
-once you pay for and submit your order and until we receive notification of the same.
-We will notify you by email when we have dispatched your order. Acceptance of the
-order will be deemed both complete and to have been effectively communicated to
-you when Admire Diamonds sends the order acknowledgement email to you
-(whether or not you receive that email).
-
-ITEM PRICES
-All prices for Admire Diamonds’ items will be as stipulated at the time of you placing
-an order on our website. We are entitled to amend the price to account for an
-increase in our supplier’s prices, or the imposition of new taxes or duties, or if due to
-an error or omission, the price for one of our items is found to be incorrect.
-
-ITEM SPECIFICATIONS
-Some of the items may vary in colour/style. Therefore, whilst we will include as much
-details as possible for our item descriptions, it may not be reasonably possible to
-keep specifications completely up to date. All descriptive matters, pictures, colours,
-specifications, and advertising on the website are for the sole purpose of giving an
-approximate description of the items to the best of our ability and knowledge.
-
-DISPATCH AND DELIVERY PROCESS 
-We aim to complete and jewellery items within 4-6 weeks of placing your order.
-While we send you an estimated delivery date/time upon processing your order, we
-cannot guarantee a specific arrival date, as it all depends on the item/s ordered and
-delivery timescales, including potential delays with Royal Mail or our couriers, which
-is outside of our control.
-Admire Diamonds is pleased to also accept international orders. 
-We offer free UK shipping and we offer international shipping, which is chargeable to
-the Customer. Both are fully insured “door to door”. You will also be able to track the
-shipping of your order online and will be provided with those details by us.
-
-On the date of delivery, you will need to sign for the delivery on receipt, after which
-time the item/s become your sole responsibility.
-We will not be responsible for any losses, costs, damages, or charges that you may
-suffer in the event we have had to delay the dispatching, delivering and/or supplying
-of our item/s where it was outside of our control and/or the responsibility of Royal
-Mail or our courier. This will not affect your insurance rights for the dispatched item/s.
-‍
-IF YOU ARE UNHAPPY
-We will be happy to carry out ring sizing on one occasion at no charge within one
-year of purchase. You will, however, be responsible for return postage fees. We
-charge for additional ring sizing and/or any ring alterations. 
-A bespoke ring can be returned and fully refunded within 14 days less our bespoke
-work costs for work done. Please get in touch with us by email at
-info@admirediamonds.com  for more information and we can advise on what
-amount of the price we can refund to you after calculating the same.
-You will be responsible for the costs of returning the item to us, preferably by
-registered/special delivery, in case it gets lost or delayed in transit. We strongly
-advise that you obtain proof of posting and use recorded/special delivery using Royal
-Mail, DHL or FedEx. We will not be liable if the returned items are delayed and/or
-lost in transit. We will only be liable from the date of receipt of the returned order.
-
-ENGAGEMENT RING WARRANTY
-
-All of our engagement rings come with a lifetime warranty and if any of the small
-stones fall out of the setting we will be happy to replace or fix your engagement ring
-for you at no cost other than the return postage fee. 
-However, the warranty does not cover the following circumstances*:
- Loss of your engagement ring and/or
-If you lose the centre diamond/gemstone from the engagement ring.  
-*We strongly suggest that you insure your engagement ring to cover the above
-exclusions. 
-‍
-
-ADVERTISING AND PROMOTIONS
-We reserve the right to place advertisements and promotions on the website.
-Advertisers and sponsors on our website, if any, must comply with all local, national,
-state and international laws (where relevant) and are solely liable for their actions.
-‍
-DISCLAIMER‍
-
-Admire Diamonds makes no warranties, may it be expressed or implied, therefore
-negates all other warranties. The information on our website is for information
-purposes only and, although we have made every effort to ensure the correctness of
-the information, the said information is provided as stated/specified/displayed and
-without warranties or conditions of any kind whether express or implied. 
-Furthermore, we do not make any representations concerning the accuracy or
-reliability of the information on our website or otherwise and/or any sites linked to our
-website.
-
-LIMITATION OF LIABILITY
-To the fullest extent allowed by the law, under no circumstances, including, but not
-limited to, negligence, are we liable to the Customer/Recipient for any direct, indirect,
-incidental, special or consequential damages that result from the use of and/or the
-inability to use the information on our website, any changes to the website, data sent
-or received or not sent and/or for any of the above mentioned damages that result
-from the use or inability to use our products. 
-This does not impact your statutory rights.
-‍
-PROPRIETARY RIGHTS
-All of the content which includes but is not limited to text, software, photographs,
-graphics or other material on our website, within advertisements or emails,
-commercial information from our website, by us, or our advertisers or any other
-content providers, is protected by trademarks, copyrights, patents and/or other
-proprietary rights and laws that are applicable.
-‍
-PERFORMANCE OF CONTRACT AND LEGAL JURISDICTION
-We shall not be liable for any failure to perform our obligations as a result of
-circumstances that are beyond our reasonable control. This includes but is not
-limited to a 'force majeure' incident. Any such failure to exercise or enforce a right or
-provision of the terms of use will not constitute a waiver of such right or provision
-unless we (the Customer and us) have both acknowledged and agreed this in
-writing. 
-The terms of use are governed by and construed fully in accordance with the laws of
-England and Wales. Both parties agree to submit to the exclusive jurisdiction of the
-courts located in England and Wales. If any provision of the terms of use is held by a
-court of jurisdiction to be contrary to law, then such provision will be construed to
-reflect the intentions of the parties with the other provisions that are in full force and
-effect.
-‍
-AMENDING TERMS AND CONDITIONS
-We reserve the right to change the terms or any of the policies regarding the use of
-the website, our items and/or services (including item descriptions, prices or and/or
-
-item availability) at any time and may notify you by the act itself of posting an
-updated version of our terms and conditions on our website.
-The information on our website may include technical, typographical, or photographic
-errors and we cannot promise all the materials are completely accurate. Admire
-Diamonds may need to change the content or information, at any time, without giving
-prior notice.
-‍
-‍
-REFERENCE TO OTHER SITES ON OUR WEBSITE
-Admire Diamonds is not responsible for content including its accuracy of websites
-that are linked to our own website page. The presence of any link does not imply
-endorsement by Admire Diamonds of our site or information. The use of any linked
-website is at the Customer's own risk so we always suggest to act carefully.
-
-CUSTOMS CLEARANCE, TAXES AND DUTIES - INTERNATIONAL
-ORDERS
-Some countries outside of the UK may be subject to taxes and duties. Payments of
-tax and duties are the responsibility of the Customer or Recipient of our items.
-Admire Diamonds is, under no circumstances, liable for country specific custom
-taxes and/or duties as a result of delivering your order whether to you or your
-recipient. Please contact your local customs office for more information on potential
-liabilities that will apply to you or your recipient before you order with us.
-Every country has its own customs clearance levels. Although most countries accept
-all imports, some items may be refused entry to a specific country. Please make sure
-you check with your local customs office who can advise on the items that cannot
-enter their country.
-The Recipient/Customer may be liable for additional charges. It is the Customer’s
-sole responsibility to familiarise themselves with the laws and rules that apply to the
-country where the order will be delivered, before placing their order. 
-‍
-IF YOU'RE UNHAPPY OR WANT TO PROVIDE ANY FEEDBACK
-We strive to do our best for our customers here at Admire Diamonds. If you are
-unhappy with the items or our services that you have received from us or would like
-to provide feedback, please let us know so that we can help.
-You can email us at info@admirediamonds.com or the CONTACT US link on our
-website. Please include as much information as you can including the order
-reference, email address and contact number including your ideal outcome. For
-complaints, we will look into the matter for you and aim to provide a full response
-within 7 days. We will keep you updated.
-We always welcome comments and feedback.
-
-If you have any queries in relation to our Terms and Conditions, please feel free to
-contact us and we will be happy to assist.
-We hope your experience with us is nothing less than magical!
-
--->
