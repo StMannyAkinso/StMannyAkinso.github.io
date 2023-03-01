@@ -103,7 +103,6 @@ header{
 
 }
 header:hover{
-    /* border: 2px solid black;  */
     background-color: #f0f0e8;
 }
 .menuIcons{
@@ -968,7 +967,7 @@ footer {
    }
    #followusindex{
     margin-bottom: 100%;
-    border: black 2px solid;
+ 
    }
    .vertToHori{
     display: flex;
@@ -1001,7 +1000,7 @@ footer {
     
     }
     #hdVertHalf{
-        border: #373737 3px solid;
+      
     }
    .flexSlider .flexColumn{margin:5%;}
     .reviewCard{
@@ -1020,18 +1019,18 @@ footer {
     
     }
     section{
-        border: black solid 2px;
+  
         margin-top: 0;
     }
     .row{
         height: 80vh;
-        border: black solid 2px;
+   
     }
     .horiHalfRow{
         height: 30vh;
     }
     footer{
-        border: black solid 2px;
+     
     }
     footer p{
         font-size: larger;
