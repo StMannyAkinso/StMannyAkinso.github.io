@@ -260,6 +260,10 @@ blockquote{
     display: flex;
     flex-wrap: wrap;
 }
+.padded{
+    padding-left: 15%;
+    padding-right: 15%;
+}
 
 /* ------------------------------------------------------------------ */
 /* Containers */
@@ -1015,15 +1019,19 @@ footer {
     }
 
 }
+
 @media (min-width: 1500px){
+    h2 {
+        font-size: xx-large;
+    }
     .textbox p{
         font-size: 1.2rem;
     }
     p{
         font-size: 1.8rem;
     }
-    .horiHalfRow p{
-        font-size: large;
+    .larger{
+        font-size: larger;
     }
     #showcaseres{
         height: 35vh;
