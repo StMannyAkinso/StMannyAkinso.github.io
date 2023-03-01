@@ -758,6 +758,7 @@ footer {
   }
   footer p{
     color:#b5a38684;
+    font-weight: bolder;
   }
  footer .card{
     width: 25%;
@@ -986,14 +987,20 @@ footer {
     }
     #showcaseRowhori{
     }
+    #hdVertHalf{
+        height: 50vh;
+    }
     #showcaseRowslider1{
-     height: 30vh;
+     height: 50vh;
 
     }
     #showcaseRowhori2{
        height: 50%;
        width: 100%;
     
+    }
+    #hdVertHalf{
+        border: #373737 3px solid;
     }
    .flexSlider .flexColumn{margin:5%;}
     .reviewCard{
