@@ -80,7 +80,10 @@ p{
     font-weight: 100;
     color: #7468548b;
 }
-
+.textboxStatic p{
+    padding-left: 10%;
+    padding-right: 10%;
+}
 /* ------------------------------------------------------------------ */
 /* Header */
 header{
@@ -788,6 +791,10 @@ footer {
       p{
         font-size: small;
       }
+      .textboxStatic p{
+        padding-left: 0;
+        padding-right: 0;
+    }
      
     .horiHalfRow::-webkit-scrollbar-thumb {
         border-radius: 4px;
@@ -873,6 +880,7 @@ footer {
     min-width: 50%;
     height: 70%;
 }
+
 
 #processP{
    width: 100%;
@@ -1001,7 +1009,6 @@ footer {
 @media (min-width: 1500px){
     header button{
         font-size: 1.5rem;
-        text-transform: uppercase;
     
     }
     section{
@@ -1022,8 +1029,16 @@ footer {
         font-size: larger;
     }
 }
+
 @media (max-height: 800px){
     #formRow{
        height: 200vh;
     }
+    #aboutUsRow{
+        height: 150vh;
+    }
+    #ringIllustration{
+        padding-top: 10%;
+    }
 }
+
