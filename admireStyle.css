@@ -1022,4 +1022,8 @@ footer {
         font-size: larger;
     }
 }
-
+@media (max-height: 800px){
+    #formRow{
+       height: 200vh;
+    }
+}
