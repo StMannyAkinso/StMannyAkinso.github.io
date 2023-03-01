@@ -886,7 +886,9 @@ footer {
    width: 100%;
 }
 
+#showcasehome.row{
 
+}
     #followUs.flexColumn{
        
         display: flex;
@@ -1014,9 +1016,31 @@ footer {
 
 }
 @media (min-width: 1500px){
+    .textbox p{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    .horiHalfRow p{
+        font-size: large;
+    }
+    #showcaseres{
+        height: 35vh;
+        
+        justify-content: flex-start;
+        padding-bottom: 10%;
+    }
+    #showcaseRowslider1{
+      padding-top: 5%;
+        height: 30vh;
+    }
+
+    .hide{
+        display: none;
+    }
     header button{
         font-size: 1.5rem;
-    
     }
     section{
   
@@ -1027,7 +1051,7 @@ footer {
    
     }
     .horiHalfRow{
-        height: 30vh;
+        height: 40vh;
     }
     footer{
      
@@ -1047,5 +1071,6 @@ footer {
     #ringIllustration{
         padding-top: 10%;
     }
+    
 }
 
