@@ -11,7 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
   </head>
-  <body >
+  <body id="aboutUsBody">
     <header>
       <div class="container">
         <div class="logoHeader">
@@ -42,6 +42,7 @@
       background-image: url(images/ringonshoulder.jpeg);
       background-size: 100% 100%;
     "
+    id="aboutSlideshow"
   >
         <div class="flexColumn">
           <div class="textboxStatic" style="height:80%; width:80%;border: #f0f0e8 solid 3px; overflow: hidden;">
@@ -49,7 +50,7 @@
             <h2 style="color:#f0f0e8">
              About Us
             </h2>
-            <p style="color: #f0f0e8; width:60%; line-height: 150%;">
+            <p>
               Admire Diamonds was founded by Imren Akkir in 2021 who has since
               worked extremely hard to build a prestigious luxury brand.
               Equipped with vast knowledge in the industry of diamonds and
@@ -68,7 +69,7 @@
     <!-- Ensured Quality -->
     <div class="row">
       <div class="flexContainer">
-        <div class="vertHalf">
+        <div class="vertHalf" id="ensuredQuality">
           <div class="flexColumn">
             <div class="textbox" style="display: flex;flex-direction: column;justify-content: center;">
               <h2><i class="fa fa-gem"></i> Ensured Quality </h2>
@@ -90,7 +91,7 @@
         </div>
         <div class="vertHalf">
           <div class="flexContainer">
-           <div class="imagebox" style="height:90%; width:90%; border:black 2px solid; background-color: white;"></div>
+           <div class="imagebox" style="height:90%; width:90%; "> <img src="images/aboutusdiamonds.jpg" alt="" style="max-height:100%; width:100%;"></div>
           </div>
         </div>
       </div>
@@ -98,8 +99,8 @@
     <!-- Eco -->
     <div
       class="row"
+      id="ecoSection"
       style="
-        margin: 0;
         background-image: url(images/enviroment.jpg);
         background-size: 100% 100%;
       "
@@ -110,7 +111,7 @@
               <h2 style="color:#f0f0e8">
                 <i class="fa fa-leaf"></i> Eco-Friendly
               </h2>
-              <p style="color: #f0f0e8; width:60%; line-height: 150%;">
+              <p>
                 We are proud to offer all the sparkle plus the sustainability of
                 a more ethically sourced luxury stone. Our sources are
                 eco-friendly with no mining, deforestation, or unfair labour
@@ -131,21 +132,8 @@
     <!-- Follow us -->
     <div class="row">
       <div class="flexContainer">
-        <div class="vertHalf">
-          <div class="flexColumn">
-            <div class="horiHalf">
-              <div class="flexColumn">
-                <h2>
-                  Follow Us
-                  <i
-                    class="fab fa-instagram"
-                    style="color: #babab1; font-size: large"
-                  ></i>
-                </h2>
-                <p>Keep up to date with all things Admire</p>
-                <button class="pagebtn">Connect</button>
-              </div>
-            </div>
+        <div class="vertHalf" id="vertToHori">
+          <div class="flexColumn" id="followUs">
             <div class="horiHalf">
               <div class="flexColumn">
                 <div class="profilePhoto">
@@ -155,17 +143,56 @@
                     alt=" "
                   />
                 </div>
-                <h3 style="font-size: larger">@AdmireDiamonds</h3>
+                <h4 style="font-size: larger; letter-spacing: normal; text-transform: none;  color: #7468548b;">@AdmireDiamonds</h4>
               </div>
             </div>
+            
+            <div class="horiHalf">
+              <div class="flexColumn" style=" justify-content: flex-start;">
+                <h2 style="text-transform: none;">
+                  Follow Us
+                  <i
+                    class="fab fa-instagram"
+                    style="font-size: larger"
+                  ></i>
+                </h2>
+                <p>Keep up to date with all things Admire</p>
+                <a
+                  href="https://www.instagram.com/admirediamonds/"
+                  target="_blank"
+                  ><button class="pagebtn">Connect</button></a
+                >
+              </div>
+            </div>
+            
           </div>
         </div>
-        <div class="vertHalf">
-          <div class="flexColumn">
-            <blockquote class="instagram-media" data-instgrm-version="14">
-              <!-- replace this href with the link to the post -->
-              <a href="https://www.instagram.com/p/CbK88GsFPXT/"></a>
-            </blockquote>
+        <div class="vertHalf" id="igPosts">
+          <div class="flexSlider" style="scroll-snap-type: x mandatory">
+            <div class="flexColumn">
+              <blockquote class="instagram-media" data-instgrm-version="14">
+                <!-- replace this href with the link to the post -->
+                <a href="https://www.instagram.com/p/Cow10QGPQSX/"></a>
+              </blockquote>
+            </div>
+            <div class="flexColumn">
+              <blockquote class="instagram-media" data-instgrm-version="14">
+                <!-- replace this href with the link to the post -->
+                <a href="https://www.instagram.com/p/CbK88GsFPXT/"></a>
+              </blockquote>
+            </div>
+            <div class="flexColumn">
+              <blockquote class="instagram-media" data-instgrm-version="14">
+                <!-- replace this href with the link to the post -->
+                <a href="https://www.instagram.com/p/CkLFc_tMvdu/"></a>
+              </blockquote>
+            </div>
+            <div class="flexColumn">
+              <blockquote class="instagram-media" data-instgrm-version="14">
+                <!-- replace this href with the link to the post -->
+                <a href="https://www.instagram.com/p/ChxcMrfvk6Z/"></a>
+              </blockquote>
+            </div>
           </div>
         </div>
       </div>
@@ -174,26 +201,30 @@
     <!-- Footer -->
     <footer style="height: 30vh">
       <div class="flexContainer">
-        <div class="vertThird">
-          <div class="flexColumn">
-            <i class="fa fa-phone"></i>
-            <h4>Call Us</h4>
-            <p>44 777777</p>
-          </div>
-        </div>
-        <div class="vertThird">
+        
+        <div class="card">  <div class="flexColumn">
+          <i class="fa fa-phone"></i>
+          <h4>Call Us</h4>
+          <p>44 777777</p>
+        </div></div>
+
+        <div class="card">
           <div class="flexColumn">
             <i class="fa fa-user-friends"></i>
             <h4>Book Now</h4>
             <p>Book an appointment</p>
           </div>
         </div>
-        <div class="vertThird">
+
+        <div class="card">
           <div class="flexColumn">
             <i class="fa fa-envelope"></i>
             <h4>Email Us</h4>
             <p>admirediamonds@hotmail.com</p>
           </div>
+        </div>
+        
+
         </div>
       </div>
     </footer>
@@ -212,3 +243,4 @@
     </script>
   </body>
 </html>
+
