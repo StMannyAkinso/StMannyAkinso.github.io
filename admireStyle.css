@@ -24,16 +24,7 @@ a {
     text-decoration: none;
     font-family:'Black Mango W05 SemiBold' , 'fallback-font';
 }
-.flexSlider::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 7px;
-  }
-  
-.flexSlider::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, .5);
-    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
-  }
+
 /* ------------------------------------------------------------------ */
 /* Fonts */
 h1{    
@@ -155,6 +146,8 @@ select{
    border: none;
 }
 textarea{
+    border: 2px #98988f solid;
+    min-height: 100px;
     padding: 2%;
     background: none;
     color: #71716a;
@@ -173,9 +166,6 @@ blockquote{
     margin-left: 10%; 
     margin-right: 10%;
     transition: ease-in 0.2s;
-    
-    overflow-x: hidden;
-   
 }
 .fullRow{
     height: 100vh;
@@ -294,20 +284,6 @@ blockquote{
     max-width: 90%;
 }
 
-.storyContainer{
-    width: 100%;
-    height:20%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-.storyContainer p{
-    position: absolute;
-    bottom: 0;
-    right: 25%;   
-}
 
 /* ------------------------------------------------------------------ */
 /* Cards */
@@ -323,18 +299,15 @@ blockquote{
 .reviewCard
 {
     max-height: 80%;
-    min-width: 33%;
+    min-width: 40%;
     position: relative;
     padding: 2%;
-    background-color: #f6f6ec;
+    background-color: #f0f0e8;
     transition: ease-in 0.2s;
     font-size: auto;
     overflow-y: scroll;
 }
-.card:hover
-{
-    transform: scale(1.1);
-}
+
 .horiHalfRow .card
 {
     margin: 1%;
@@ -352,6 +325,18 @@ width: 30%;
 .flexWrapper .reviewCard p{
    
     margin-bottom: 20%;
+}
+
+.reviewVideo{
+    margin: 2%;
+   height: 95%;
+   min-width:50%;    
+}
+.reviewVideo video{
+    border: #B5A386 5px solid;
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 40%;
 }
 /* ------------------------------------------------------------------ */
 /* Banners */
@@ -427,32 +412,40 @@ label{
 .navBtn .fas{
     transition: ease-in 0.2s;
 }
+.connectbtn{
+    padding: 13px 20px;
+    color: #98988f;
+    text-decoration: none;
+    position: relative;
+    background: transparent;
+    border: 2px solid #b3b3a9;
+    font: 12px/1.2 sans-serif;
+    letter-spacing: 0.4em;
+    text-align: center;
+    text-indent: 2px;
+    text-transform: uppercase;
+    margin: 1%;
+    transition: ease-in-out 0.3s;
+    box-shadow: 5px 5px 2px #d2d2c8;
+}
+.connectbtn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
 .navBtn .fas:hover{
     transform: scale(2);
 }
-
-.highlightsBtn{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: 1%;
-    cursor: pointer;
-    border: none;
-    background-color:#f0f0e8;
-    position: fixed;
-    right: 2%;
-    top: 11%;
-    height: 10%;
-    width: 5%;
-    z-index: 10;
-    transition: ease-in 0.2s;
-    
+#aboutSlideshow.row p{
+    color: #f0f0e8; 
+    width: 60%; 
+    line-height: 150%;
+}
+#ecoSection.row p{
+    color: #f0f0e8; 
+    width:60%; 
+    line-height: 150%;
 }
 
-.highlightsBtn .fa{
-    font-size: 30px ;
-}
 /* ------------------------------------------------------------------ */
 /* Slideshow */
   
@@ -605,6 +598,7 @@ label{
   }
   .slideshow .slide .text p {
     color:#f0f0e8;
+    
 }
   .slideshow .slide .slideBtn {
     margin: 15px 0 0;
@@ -706,17 +700,20 @@ footer {
 }
  footer .fa{
     font-size: 30px;
-    color: #babab1;
+    color:#B5A386;
+  }
+  footer h4{
+    color: #b5a38695;
+    margin-bottom: 0;
   }
   footer p{
-    border: #373737 solid 2px;
+    color:#b5a38684;
   }
  footer .card{
+    width: 25%;
     background-color: #f0f0e8;
     box-shadow: none;
     border: none;
-    padding: 2%;
-    margin: 2%;
     cursor: pointer;
     transition: ease-in 0.2s;
  }
@@ -738,7 +735,14 @@ footer {
         -webkit-appearance: none;
         width: 2px;
       }
-      
+      h2{
+        padding-top: 20%;
+        
+      }
+      p{
+        font-size: small;
+      }
+     
     .horiHalfRow::-webkit-scrollbar-thumb {
         border-radius: 4px;
         background-color: rgba(0, 0, 0, .5);
@@ -747,13 +751,19 @@ footer {
     .menuIcons{
         position: absolute;
         right:-12%;
-        width: 80%;
+        width: 90%;
     }
     .menuIcons button{        
-        width: 20%;
+        width: 21%;
         font-size: medium;
     }
-    .row{margin: 2%;}
+    .logoTitle{
+        height: 70px;
+        margin-top: 30%;
+    }
+    .row{
+        margin-bottom: 20%;
+    }
     .horiHalfRow{
         margin-left: 0;
         margin-right: 0;
@@ -799,11 +809,14 @@ footer {
     font-size: medium;
 }
 
+.slideshow .slide .text p {
+    color:#f0f0e8;
+    font-size: small;
+}
 
-
-.logoTitle{
-    margin-top: 20%;
-} 
+.connectbtn{
+    display: none;
+}
 
 .flexWrapper{
     flex-wrap: nowrap;
@@ -815,8 +828,7 @@ footer {
 }
 
 #processP{
-   width: 80%;
-   margin-bottom: 10%;
+   width: 100%;
 }
 
 
@@ -829,7 +841,6 @@ footer {
 
     #igPosts.vertHalf{
         margin-top: 50%;
-       
     }
     #manufactureTextbox.textbox{
         overflow-y: hidden;
@@ -842,10 +853,90 @@ footer {
     footer{
         margin-top: 100%;
     }
+    footer .card{
+        margin-right: 5%;
+    }
     footer p{
         font-size:xx-small;
     }
     footer .vertThird{
         overflow-x: hidden;
     }
+
+    #enquiryFormHalf.vertHalf {
+        margin-top: 200%;
+    }
+    #enquiryFormHalfPic.vertHalf{
+        margin-top: 40%;
+
+    }
+    #reviewSection{
+        padding-top: 150%;
+    
+    }
+    #ensuredQuality{
+        margin-top: 100%;
+    }
+    #ecoSection{
+        margin-top: 100%;
+    }
+    #aboutSlideshow.row{
+        height: 70vh;
+    }
+    #aboutSlideshow.row p{
+        font-size: smaller;
+        width: 100%;
+    }
+    #ecoSection.row p{
+        font-size: smaller;
+        width: 100%;
+    }
+    #formRow{
+        margin-top: 20%;
+    }
+    #enquiryBody {
+        padding-top: 10%;
+    }
+   #aboutUsBody{
+    padding-top: 15%;
+   }
+   #aboutUsV3{
+    width: 100%;
+   }
+   #followusindex{
+   }
+   #atadmiretext{
+    font-size: smaller;
+   }
+   #showcaseRow{
+   flex-wrap: wrap;
+
+   height:200vh;
+   }
+   #showcaseRowflex{
+   
+    padding: 0;
+    }
+    #showcaseRowhori{
+    }
+    #showcaseRowslider1{
+        display: block;
+      justify-content: center;
+
+    }
+    #showcaseRowhori2{
+       height: 50%;
+       width: 100%;
+    
+    }
+   .flexSlider .flexColumn{margin:5%;}
+    .reviewCard{
+       
+        min-width: 90%;
+    }
+    .reviewVideo{
+        margin: 5%;
+        min-width: 80%;
+    }
+
 }
