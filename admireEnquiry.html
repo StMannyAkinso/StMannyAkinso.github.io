@@ -35,14 +35,16 @@
       </div>
     </header>
 
-    <!-- Form -->
+    <!-- Form    -->
     <div class="row" style="margin-top: 5%" id="formRow">
       <div class="flexContainer">
         <div class="vertHalf" id="enquiryFormHalf">
           <h2>Get in Touch</h2>
           <p>Enquire with Admire today!</p>
 
-          <form class="enquiryForm" action="admireSubmit.html">
+          <form class="enquiryForm" method="POST" action="https://formsubmit.co/mannyakinso@googlemail.com">
+            <input type="hidden" name="_next" value="https://admirediamonds.com/admireSubmit.html?firstname=&lastname=&email=&number=&Do+you+prefer+to+be+contacted+via+email+or+phone%3F=">
+            
             <label for="fname">First Name</label>
             <input
               type="text"
@@ -77,13 +79,14 @@
             <label for="input-price">Budget (£)</label>
             <input
               id="input-price"
+              name="budget"
               class="form-control just-number price-format-input"
               placeholder="£"
             />
             <label for="subject">Message</label>
             <textarea
               id="subject"
-              name="Do you prefer to be contacted via email or phone?"
+              name="comments"
               placeholder="Other comments.."
               style="height: 100%;
               max-height: 33vh;"
@@ -108,9 +111,11 @@
               "
             />
           </form>
+
+
         </div>
 
-        <div class="vertHalf" id="enquiryFormHalfPic"><div class="flexColumn"><img src="images/ringChampagne.jpeg" alt="" style="width: 100%;max-height:100%; border: 0.4rem solid #c4c4bc;"></div></div>
+        <div class="vertHalf" id="enquiryFormHalfPic"><div class="flexColumn"><img src="images/ringChampagne.jpeg" alt="" style="width: 100%;max-height:100%; border: 0.4rem solid #B5A386;"></div></div>
       </div>
     </div>
 
