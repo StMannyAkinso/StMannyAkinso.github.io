@@ -4,48 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admire | Enquire</title>
+    <title>Admire | Home</title>
     <link rel="stylesheet" href="admireStyle.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
-    <link rel="icon" type="image/x-icon" href="images/logos/admireLogo(nobck).png">
   </head>
-  <body id="enquiryBody">
-    <header>
-      <div class="container">
-        <div class="logoHeader">
-          <img
-            src="images/logos/admireLogo(nobck).png"
-            alt=""
-            style="height: 100px"
-          />
-        </div>
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">
+      <img
+        src="images/logos/admireLogo(nobck).png"
+        alt=""
+        style="margin-left: 5%"
+    /></a>
 
-        <div class="menuIcons">
-          <a href="index.html"><button>Home</button></a>
-          <a href="admireAbout.html"><button>About</button></a>
-          <a href="admireEnquiry.html"><button>Enquire</button></a>
+    <div class="menuIcons">
+      <a href="index.html"><button>Home</button></a>
+      <a href="admireAbout.html"><button>About</button></a>
+      <a href="admireEnquiry.html"><button>Enquire</button></a>
 
-          <a href="tel:07786230470"
-            ><button><i class="fa fa-phone"></i></button
-          ></a>
-        </div>
-      </div>
-    </header>
+      <a href="tel:07786230470"
+        ><button><i class="fa fa-phone"></i></button
+      ></a>
+    </div>
+  </header>
+  <body>
+    <section
+      class="main" style="
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;"
+    >
+        <!-- Form -->
+      <div class="container flexColumn">
+        <h2>Get in Touch</h2>
+          <h4>Enquire with Admire Diamonds today!</h4>
 
-    <!-- Form    -->
-    <div class="row" style="margin-top: 5%" id="formRow">
-      <div class="flexContainer">
-        <div class="vertHalf" id="enquiryFormHalf">
-          <h2>Get in Touch</h2>
-          <p>Enquire with Admire today!</p>
-
-          <form class="enquiryForm" method="POST" action="https://formsubmit.co/7bafd2ee7f84f919eb1380f38d6ddb54">
-            <input type="hidden" name="_next" value="https://admirediamonds.com/admireSubmit.html?firstname=&lastname=&email=&number=&Do+you+prefer+to+be+contacted+via+email+or+phone%3F=">
-            
-            <label for="name">Your Name</label>
+          <form class="flexColumn" method="POST" action="https://formspree.io/f/xzbqvzba">
+                   
+            <label for="name">Name</label>
             <input
               type="text"
               id="name"
@@ -98,7 +97,6 @@
               type="submit"
               value="Submit"
               style="
-                padding-top: 4%;
                 font-size: large;
                 cursor: pointer;
                 color: #B5A386;
@@ -106,22 +104,28 @@
             />
           </form>
 
-
-        </div>
-
-
-        <div class="vertHalf" id="enquiryFormHalfPic"><div class="flexColumn"><img src="images/ringChampagne.jpeg" alt="" style="width: 100%;max-height:100%; border: 0.4rem solid #B5A386;"></div></div>
       </div>
-    </div>
+      <div class="container flexColumn">
+        <div class="imagebox">
+          <img
+            src="images/ringChampagne.jpeg"
+            alt=""
+          
+          />
+        </div>
+      </div>
+    </section>
 
     <!-- Reviews -->
-    <section id="reviewSection">
+
+    <section class="sidePadding">
+
       <div class="textbox" style="padding: 0%; margin-bottom: 0%;">
-        <h4>
+        <h3>
           Ismail <br /><i class="fa fa-star"></i><i class="fa fa-star"></i
           ><i class="fa fa-star"></i><i class="fa fa-star"></i
           ><i class="fa fa-star"></i>
-        </h4>
+        </h3>
         <p style="text-align: left;">
           <i class="fa fa-quote-left"></i> I came to Admire diamonds with a very
           short notice proposal idea and required a engagement ring to be made
@@ -218,151 +222,38 @@
     
       
     </div>
-  </section>
-    <!-- Follow us -->
-    <div class="row" style="display: none;">
-      <div class="flexContainer">
-        <div class="vertHalf" id="vertToHori">
-          <div class="flexColumn" id="followUs">
-            <div class="horiHalf">
-              <div class="flexColumn">
-                <div class="profilePhoto">
-                  <img
-                    src="images/logos/admireLogo(nobck).png"
-                    style="max-height: 100%; max-width: 100%"
-                    alt=" "
-                  />
-                </div>
-                <h4 style="font-size: larger; letter-spacing: normal; text-transform: none;  color: #7468548b;">@AdmireDiamonds</h4>
-              </div>
-            </div>
-            
-            <div class="horiHalf">
-              <div class="flexColumn" >
-                <h2 style="text-transform: none;">
-                  Follow Us
-                  <i
-                    class="fab fa-instagram"
-                    style="font-size: larger"
-                  ></i>
-                </h2>
-                <p>Keep up to date with all things Admire</p>
-                <a
-                  href="https://www.instagram.com/admirediamonds/"
-                  target="_blank"
-                  ><button class="pagebtn">Connect</button></a
-                >
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        <div class="vertHalf" id="igPosts">
-          <div class="flexSlider" style="scroll-snap-type: x mandatory">
-            <div class="flexColumn">
-              <blockquote class="instagram-media" data-instgrm-version="14">
-                <!-- replace this href with the link to the post -->
-                <a href="https://www.instagram.com/p/Cow10QGPQSX/"></a>
-              </blockquote>
-            </div>
-            <div class="flexColumn">
-              <blockquote class="instagram-media" data-instgrm-version="14">
-                <!-- replace this href with the link to the post -->
-                <a href="https://www.instagram.com/p/CbK88GsFPXT/"></a>
-              </blockquote>
-            </div>
-            <div class="flexColumn">
-              <blockquote class="instagram-media" data-instgrm-version="14">
-                <!-- replace this href with the link to the post -->
-                <a href="https://www.instagram.com/p/CkLFc_tMvdu/"></a>
-              </blockquote>
-            </div>
-            <div class="flexColumn">
-              <blockquote class="instagram-media" data-instgrm-version="14">
-                <!-- replace this href with the link to the post -->
-                <a href="https://www.instagram.com/p/ChxcMrfvk6Z/"></a>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    </section>
     <!-- Footer -->
-      <!-- Footer -->
-      <footer style="height: 30vh">
-        <div class="flexContainer">
-          
-          <div class="card">  <div class="flexColumn">
-            <i class="fa fa-phone"></i>
-            <h4>Call Us</h4>
-            <p>077 8623 0479</p>
-          </div></div>
+    <footer class="flexRow">
+        <div class="container flexColumn" style="height: 25vh">
+          <a href="tel:07786230479"
+            ><div class="textbox">
+              <i class="fa fa-phone"></i>
+              <h4>Call Us</h4>
+              <p>077 8623 0479</p>
+            </div></a
+          >
+        </div>
   
-          <div class="card">
-            <div class="flexColumn">
+        <div class="container flexColumn" style="height: 25vh">
+          <a href="admireEnquiry.html">
+            <div class="textbox">
               <i class="fa fa-user-friends"></i>
               <h4>Book Now</h4>
               <p>BOOK A CONSULTATION</p>
             </div>
-          </div>
-  
-          <div class="card">
-            <div class="flexColumn">
+          </a>
+        </div>
+        <div class="container flexColumn" style="height: 25vh">
+          <a href="mailto:info@admirediamonds.com">
+            <div class="textbox">
               <i class="fa fa-envelope"></i>
               <h4>Email Us</h4>
               <p>info@admirediamonds.com</p>
             </div>
-          </div>
-          
-  
-          </div>
+          </a>
         </div>
       </footer>
-    <!-- Scripting -->
-
-    <script src="//www.instagram.com/embed.js"></script>
-    <script async src="//www.instagram.com/embed.js"></script>
-
-    <script>
-      function openNav() {
-        document.getElementById("mySidebar").style.width = "9%";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidebar").style.width = "0";
-      }
-    </script>
-
-    <!-- Currency Input-->
-    <script>
-      $(document).on("keypress", ".just-number", function (e) {
-        let charCode = e.which ? e.which : e.keyCode;
-        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
-          return false;
-        }
-      });
-      $(document).on("keyup", ".price-format-input", function (e) {
-        let val = this.value;
-        val = val.replace(/,/g, "");
-        if (val.length > 3) {
-          let noCommas = Math.ceil(val.length / 3) - 1;
-          let remain = val.length - noCommas * 3;
-          let newVal = [];
-          for (let i = 0; i < noCommas; i++) {
-            newVal.unshift(val.substr(val.length - i * 3 - 3, 3));
-          }
-          newVal.unshift(val.substr(0, remain));
-          this.value = newVal;
-        } else {
-          this.value = val;
-        }
-      });
-
-      $(document).ready(function () {
-        $("#input-price").focus();
-      });
-    </script>
   </body>
 </html>
 
