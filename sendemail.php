@@ -1,6 +1,8 @@
 <?php
+header("Location: admireSubmit.html");
+exit;
 // Set the recipient email address here
-$to = "sample@example.com";
+$to = "mannyakinso@googlemail.com";
 
 // Get the form data
 $name = $_POST['name'];
@@ -24,4 +26,6 @@ if (mail($to, $subject, $message, $headers)) {
 } else {
   echo "Error: Email sending failed.";
 }
+
+
 ?>
