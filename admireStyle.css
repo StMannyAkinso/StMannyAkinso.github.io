@@ -188,7 +188,7 @@ element {
     transition: all ease-in 0.2s;
   }
   header button:hover{
-    background-color: white;
+    background-color: #335749;
   }
 
   button{
@@ -235,7 +235,7 @@ element {
     color: #b5a386;
     text-decoration: none;
     position: relative;
-    background: transparent;
+    background: #335749;
     border: 2px solid #b5a38698;
     font: 12px/1.2 sans-serif;
     letter-spacing: 0.2em;
