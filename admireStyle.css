@@ -152,9 +152,13 @@ element {
     max-width: 40%;
     margin: 5%;
     padding: 1%;
-    border: #e5e5dd solid 2px;
+    border: #917313 solid 2px;
     box-shadow: 10px 10px 10px gray;
     overflow-y: scroll;
+    background-color: #335749;
+  }
+  .card p{
+    color: #e5e5dd;
   }
   
   header{
