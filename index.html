@@ -2,326 +2,81 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admire | Home</title>
-    <link rel="stylesheet" href="admireStyle.css" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+
+    <script src="/assets/scripts/header.js" defer></script>
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-HYFJT06T1E"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+  <body class="bg-gray-100 text-gray-900">
+    <!-- Header -->
+    <header></header>
 
-    gtag("config", "G-HYFJT06T1E");
-  </script>
-
-  <!-- Header -->
-  <header>
-    <a href="index.html" class="logo">
-      <img
-        src="images/logos/admireLogo(nobck).png"
-        alt=""
-        style="margin-left: 5%"
-    /></a>
-
-    <div class="menuIcons">
-      <a href="index.html"><button>Home</button></a>
-      <a href="admireAbout.html"><button>About</button></a>
-      <a href="admireEnquiry.html"><button>Enquire</button></a>
-
-      <a href="tel:07786230470"
-        ><button><i class="fa fa-phone"></i></button
-      ></a>
-    </div>
-  </header>
-  <body>
-    <section
-      class="main"
-      style="display: flex; flex-wrap: wrap; justify-content: center"
-    >
-      <!-- Opening Slideshow  -->
-      <div
-        class="container mobileContainer"
-        style="
-          width: 100vw;
-          height: calc(100vw / 1.75);
-          display: flex;
-          background-image: url(images/ringchampagneglass.jpeg);
-          background-size: 100% 100%;
-        "
+    <!-- Main Content -->
+    <div class="container mx-auto">
+      <main
+        class="mt-20 flex flex-col md:flex-row items-center justify-between px-6"
       >
-        <div class="vertHalf">
-          <div
-            class="textbox flexColumn"
-            style="height: 80%; width: 80%; overflow: hidden"
+        <!-- Left Section: Name, Description, CTA & Social Links -->
+        <div class="md:w-1/2 text-center md:text-left">
+          <h3 class="">Data Driven Web Developer</h3>
+          <h1 class="text-4xl font-extrabold text-gray-900">Manny Akinso</h1>
+          <p class="mt-4 text-lg text-gray-700">
+            I'm a passionate Frontend Developer who loves creating beautiful and
+            functional web experiences.
+          </p>
+
+          <!-- CTA Button -->
+          <a
+            href="/assets/CV.pdf"
+            download
+            class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-blue-700 transition"
           >
-            <img
-              src="images/logos/textAdmireLogo(nobck).png"
-              alt=""
-              style="max-height: 80%; max-width: 80%"
-            />
-            <h2>Bespoke Diamond Jewellery</h2>
-            <a href="admireAbout.html">
-              <button
-                class="pagebtn sidePadding"
-                style="box-shadow: none; min-width: 10vw; padding: 5%"
-              >
-                Learn More
-              </button>
+            Download CV
+          </a>
+
+          <!-- Social Media Links -->
+          <div class="mt-6 flex space-x-4 justify-center md:justify-start">
+            <a
+              href="https://github.com/"
+              target="_blank"
+              class="text-gray-600 hover:text-gray-900 text-2xl"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              class="text-blue-600 hover:text-blue-800 text-2xl"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="text-blue-400 hover:text-blue-600 text-2xl"
+            >
+              <i class="fab fa-instagram"></i>
             </a>
           </div>
         </div>
-      </div>
-      <!-- About Us -->
-      <div class="container mobileContainer flexColumn">
-        <div class="textbox">
-          <h2>BESPOKE DIAMOND JEWELLERY</h2>
-          <p>
-            Divulge in the opulence of Admire Diamonds. We create exceptionally
-            crafted bespoke jewellery, tailored exactly to your desires.
-          </p>
-          <a href="">
-            <button class="pagebtn">Learn More</button>
-          </a>
-        </div>
-      </div>
-      <div class="container mobileContainer flexColumn">
-        <div class="imagebox">
-          <img
-            src="images/ring-illustration-nobck.png"
-            alt=""
-            style="max-height: 100%; max-width: 100%"
-          />
-        </div>
-      </div>
-      <!-- Jewellery Interlude -->
-      <img
-        src="images/diamondringsnobck.png"
-        alt=""
-        style="max-height: 100%; max-width: 100%"
-      />
-      <!-- Ensured Quality-->
-      <div class="container mobileContainer flexColumn">
-        <div class="textbox">
-          <h2>Ensured Quality</h2>
-          <p>
-            All of our pieces are made in London, completely bespoke, in the
-            hands of artisans and ‘stamped’ with full hallmarking. We have
-            exclusive access to the global loose diamond market, enabling us to
-            offer you huge savings in comparison to any ‘high street’ or
-            ‘mainstream’ jewellers. Our mission is to offer bespoke fine
-            jewellery at the most reasonable prices, and we do this by being
-            completely remote! (Apart from our workshop of course). Therefore,
-            as there is no physical shop front, we are able to cut down any
-            overheads that are typically associated with a jewellery retail shop
-            and offer you beautifully crafted, luxury diamond jewellery, at
-            unbeatable prices.
-          </p>
-        </div>
-      </div>
-      <div class="container mobileContainer flexColumn">
-        <div class="imagebox">
-          <img
-            src="images/homediamonds.jpg"
-            alt=""
-            style="max-height: 100%; max-width: 100%"
-          />
-        </div>
-      </div>
-      <!-- Results/Reviews -->
-      <div class="container mobileContainer flexColumn">
-        <div class="textbox">
-          <h2>Results</h2>
-          <p>
-            The process takes between 4 to 6 weeks in total from confirmation of
-            order to completion. The completed dream piece will be delivery
-            along with all necessary certifications and appraisals (you will
-            need this for insurance purposes). We offer nationwide, fully
-            insured shipping methods or, in some cases, hand delivery to you.
-          </p>
-          <a href="">
-            <button class="pagebtn">Enquire</button>
-          </a>
-        </div>
-      </div>
-      <div
-        class="container mobileContainer rowSlider"
-        style="width: 100vw; height: 50vh"
-      >
-        <div class="card">
-          <div class="textbox" style="padding: 0%; margin-bottom: 0%">
-            <h3>
-              Ismail <br /><i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star"></i>
-            </h3>
-            <p style="text-align: left">
-              <i class="fa fa-quote-left"></i> I came to Admire diamonds with a
-              very short notice proposal idea and required a engagement ring to
-              be made within 4 weeks. Without any hesitation I was comforted
-              that Imren was able to design and make me an engagement ring to
-              meet my short deadline. <br />
-              <br />
-              From the start to the end of the process Admire Diamonds helped me
-              with every aspect of the ring from size and colour to clarity to
-              cut, even sourcing me a GIA certified diamond. They gave me the
-              best recommendations for my budget. <br />
-              <br />
-              I was also always updated with diagrams and pictures of progress
-              made to keep me at ease that everything was going along as
-              planned. <br />
-              <br />
-              Once finished the ring was delivered in a beautiful light up box,
-              ready for the big day with all required certificates well before
-              the deadline. To top it all off, she said yes! <br />
-              <br />
-              Thank you Admire Diamonds for the beautiful ring and helping me
-              out at such short notice.
-              <i class="fa fa-quote-right"></i>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="textbox" style="padding: 0%; margin-bottom: 0%">
-            <h3>
-              Hakan <br />
-              <i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star"></i>
-            </h3>
-            <p style="text-align: left">
-              <i class="fa fa-quote-left"></i> I recently had the pleasure of
-              working with Admire Diamonds for a very special occasion - the
-              birth of my son. I wanted to give my wife a special token of my
-              love and appreciation for all that she's done and continues to do
-              for our family, and Admire Diamonds helped me do just that.
-              <br />
-              <br />
-              From start to finish, the team at Admire Diamonds was amazing to
-              work with. They were knowledgeable, patient, and truly listened to
-              what I was looking for in a diamond ring. The end result was a
-              stunning piece of jewelry that my wife absolutely loves. The
-              craftsmanship and attention to detail is evident in every aspect
-              of the ring, and I couldn't be happier with my choice to work with
-              Admire Diamonds.
-              <br />
-              <br />
-              I highly recommend Admire Diamonds to anyone looking for a unique
-              and special piece of jewelry. Their commitment to customer
-              satisfaction and high-quality products is unmatched, and I'm
-              grateful to have had such a wonderful experience with them. Thank
-              you Admire Diamonds for helping make a special moment even more
-              unforgettable.
-              <i class="fa fa-quote-right"></i>
-            </p>
-            <img src="images/egg.png" alt="" />
-          </div>
-        </div>
-        <div class="card">
-          <div class="textbox" style="padding: 0%; margin-bottom: 0%">
-            <h3>
-              Ceyda <br />
-              <i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star"></i>
-            </h3>
-            <p style="text-align: left">
-              <i class="fa fa-quote-left"></i> Absolutely love my ring!! Imren
-              knew exactly what I wanted! I receive so many compliments. To this
-              day I feel so lucky and can’t stop looking down at my ring!
-              <i class="fa fa-quote-right"></i>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="textbox" style="padding: 0%; margin-bottom: 0%">
-            <h3>
-              Sonay <br /><i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star"></i>
-            </h3>
-            <p style="text-align: left">
-              <i class="fa fa-quote-left"></i> My experience with using Admire
-              Diamonds was amazing! From the moment we had our first
-              consultation with Imren till the day the rings were delivered she
-              was super! I was unsure what type of wedding band to go for and
-              she went out of her way to make sure we found the perfect shape to
-              suit my engagement ring. She was friendly and professional
-              throughout the whole process and I definitely using Admire
-              Diamonds as you will not be disappointed!
-              <i class="fa fa-quote-right"></i>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="textbox" style="padding: 0%; margin-bottom: 0%">
-            <h3>
-              Mo <br /><i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star"></i>
-            </h3>
-            <p style="text-align: left">
-              <i class="fa fa-quote-left"></i> I was recommended Admire Diamonds
-              by a close friend and contacted Imren for advice more than
-              anything. The advice received was second to none, I had no choice
-              but to go ahead with them and order mr ring and my partners rings.
-              I bought an engagement ring along with wedding band and my wife
-              brought my wedding ring from Admire Diamonds. The whole experience
-              was amazing with no faults at all. We even made slight adjustments
-              to our rings and they accommodated without any hesitation. We
-              forgot to include engraving on our rings but before we collected,
-              engraving was requested to Imren and as a good gesture Imren done
-              this for us completely free of charge! If you are thinking about
-              using Admire Diamonds please do not hesitate or look any further
-              as their service from start to finish was excellent, in fact,
-              second to none. 100% buyer satisfaction.
-              <i class="fa fa-quote-right"></i>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Footer -->
-    <footer class="flexRow">
-      <div class="container flexColumn" style="height: 25vh">
-        <a href="tel:07786230479"
-          ><div class="textbox">
-            <i class="fa fa-phone"></i>
-            <h4>Call Us</h4>
-            <p>077 8623 0479</p>
-          </div></a
-        >
-      </div>
 
-      <div class="container flexColumn" style="height: 25vh">
-        <a href="admireEnquiry.html">
-          <div class="textbox">
-            <i class="fa fa-user-friends"></i>
-            <h4>Book Now</h4>
-            <p>BOOK A CONSULTATION</p>
-          </div>
-        </a>
-      </div>
-      <div class="container flexColumn" style="height: 25vh">
-        <a href="mailto:info@admirediamonds.com">
-          <div class="textbox">
-            <i class="fa fa-envelope"></i>
-            <h4>Email Us</h4>
-            <p>info@admirediamonds.com</p>
-          </div>
-        </a>
-      </div>
-    </footer>
+        <!-- Right Section: Profile Image -->
+        <div class="md:w-1/2 flex justify-center mt-10 md:mt-0">
+          <img
+            src="/assets/images/profile.png"
+            alt="Profile Picture"
+            class="w-80 h-80 rounded-full shadow-lg"
+          />
+        </div>
+      </main>
+    </div>
   </body>
 </html>
