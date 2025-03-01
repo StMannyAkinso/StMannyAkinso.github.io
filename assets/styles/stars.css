@@ -1,4 +1,8 @@
 /* Colorful night sky background with gradient */
+body {
+    overflow-x: hidden;
+}
+
 .starry-background {
     width: 100vw;
     min-height: 100vh;
