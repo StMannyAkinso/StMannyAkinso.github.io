@@ -1,83 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <script src="/assets/scripts/header.js" defer></script>
-  </head>
-  <body class="bg-gray-100 text-gray-900">
-    <header></header>
 
-    <div class="container mx-auto">
-      <main
-        class="mt-20 flex flex-col md:flex-row items-start justify-between px-6"
-      >
-        <!-- Left Section -->
-        <div class="md:w-1/3">
-          <h2 class="text-3xl font-bold">Why Hire Me?</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Manny</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="icon" href="/Images/Logos/smyrna-favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/styles/stars.css">
+
+  <script src="/assets/scripts/header.js" defer></script>
+  
+</head>
+
+<body class="starry-background text-gray-900 font-sans">
+  <header></header>
+
+  <div class="container mx-auto mt-10">
+    <main class="flex flex-col md:flex-row items-start justify-between px-6">
+      <!-- Left Section -->
+      <div class="md:w-1/3 bg-white shadow-lg rounded-lg p-6 mx-4">
+        <h2 class="text-3xl font-bold mb-4">Why Choose Me?</h2>
+        <p class="text-gray-700 mb-4">
+          I transform data into compelling web experiences that drive engagement and results, ensuring your vision is
+          realized through innovative design and strategic insight.
+        </p>
+        <!-- Navigation Buttons -->
+        <div class="mt-6 space-y-3">
+          <button onclick="showSection('about')"
+            class="tab-btn bg-yellow-500 text-white px-6 py-2 rounded-lg w-full hover:bg-yellow-600 transition">
+            About
+          </button>
+          <button onclick="showSection('experience')"
+            class="tab-btn bg-gray-300 text-gray-800 px-6 py-2 rounded-lg w-full hover:bg-gray-400 transition">
+            Experience
+          </button>
+          <button onclick="showSection('skills')"
+            class="tab-btn bg-gray-300 text-gray-800 px-6 py-2 rounded-lg w-full hover:bg-gray-400 transition">
+            Skills
+          </button>
+        </div>
+      </div>
+      <!-- Right Section (Content Updates Dynamically) -->
+      <div id="right-section" class="md:w-2/3 mt-10 md:mt-0 bg-white shadow-lg rounded-lg p-6 mb-10 mx-4 overflow-y-auto">
+        <div id="about" class="tab-content">
+          <h3 class="text-2xl font-semibold">About Me</h3>
           <p class="mt-4 text-gray-700">
-            I am a dedicated web developer passionate about building seamless
-            digital experiences.
+            I am Manny, a data-driven web developer specialising in transforming complex data into intuitive,
+            visually engaging web experiences. I use of data analytics to optimise websites and dashboards, creating
+            dynamic visualisations that enhance user engagement and drive conversion. With a strong foundation in both
+            web development and data science, I excel at managing data flows, ensuring that every element of a website
+            serves a purpose aligned with business goals. My passion lies in crafting seamless digital experiences that
+            not only tell a story but also empower users through clarity and insight. Let's connect to bring your data
+            to life!
           </p>
-
-          <!-- Navigation Buttons -->
-          <div class="mt-6 space-y-3">
-            <button
-              onclick="showSection('about')"
-              class="tab-btn bg-blue-600 text-white px-6 py-2 rounded-lg w-full hover:bg-blue-700 transition"
-            >
-              About
-            </button>
-            <button
-              onclick="showSection('experience')"
-              class="tab-btn bg-gray-300 text-gray-800 px-6 py-2 rounded-lg w-full hover:bg-gray-400 transition"
-            >
-              Experience
-            </button>
-            <button
-              onclick="showSection('skills')"
-              class="tab-btn bg-gray-300 text-gray-800 px-6 py-2 rounded-lg w-full hover:bg-gray-400 transition"
-            >
-              Skills
-            </button>
+        </div>
+      
+        <div id="experience" class="tab-content hidden">
+          <h3 class="text-2xl font-semibold">Experience</h3>
+          <div class="mt-4 text-gray-700 space-y-4">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md transition hover:shadow-lg">
+              <h4 class="font-bold text-lg">Data Analyst</h4>
+              <p class="text-gray-600">Lambeth Council | 2023 - Present</p>
+              <p>
+                Utilizing data to drive decision-making and enhance service delivery. I analyze complex datasets,
+                generate actionable insights, and visualize data to inform policy and strategy.
+              </p>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md transition hover:shadow-lg">
+              <h4 class="font-bold text-lg">Founder & Lead Developer</h4>
+              <p class="text-gray-600">Smyrna | 2022 - Present</p>
+              <p>
+                Founded Smyrna, an e-commerce business, where I lead development efforts to create a user-friendly
+                online platform that drives performance and conversion through data-driven strategies.
+              </p>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md transition hover:shadow-lg">
+              <h4 class="font-bold text-lg">Founder & Team Lead</h4>
+              <p class="text-gray-600">Smyrna Aesthetics | 2024 - Present</p>
+              <p>
+                Launched Smyrna Aesthetics, leading a team of freelance developers to craft tailored websites that
+                elevate brand presence and functionality across various industries.
+              </p>
+            </div>
           </div>
         </div>
-
-        <!-- Right Section (Content Updates Dynamically) -->
-        <div class="md:w-2/3 mt-10 md:mt-0">
-          <div id="about" class="tab-content">
-            <h3 class="text-2xl font-semibold">About Me</h3>
-            <p class="mt-4 text-gray-700">
-              I am a passionate web developer with expertise in front-end and
-              back-end development. I love solving problems and building
-              scalable applications.
-            </p>
-          </div>
-
-          <div id="experience" class="tab-content hidden">
-            <h3 class="text-2xl font-semibold">Experience</h3>
-            <p class="mt-4 text-gray-700">
-              - 3+ years of experience in full-stack web development.<br />
-              - Worked with companies to build efficient and scalable
-              applications.<br />
-              - Expertise in JavaScript, React, Node.js, and databases.
-            </p>
-          </div>
-
-          <div id="skills" class="tab-content hidden">
-            <h3 class="text-2xl font-semibold">Skills</h3>
-            <p class="mt-4 text-gray-700">
-              - Frontend: HTML, CSS, JavaScript, React, Tailwind CSS<br />
-              - Backend: Node.js, Express.js, MongoDB, SQL<br />
-              - Tools: Git, Webpack, Docker, CI/CD Pipelines
-            </p>
+      
+        <div id="skills" class="tab-content hidden">
+          <h3 class="text-2xl font-semibold">Skills</h3>
+          <div class="mt-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Skill Items -->
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center transition hover:shadow-lg">
+              <img src="/Images/html.png" alt="HTML" class="h-16 w-16 mb-2" />
+              <span class="text-gray-700">HTML</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center transition hover:shadow-lg">
+              <img src="/Images/mysql.png" alt="CSS" class="h-16 w-16 mb-2" />
+              <span class="text-gray-700">CSS</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center transition hover:shadow-lg">
+              <img src="/Images/javascript.png" alt="JavaScript" class="h-16 w-16 mb-2" />
+              <span class="text-gray-700">JavaScript</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center transition hover:shadow-lg">
+              <img src="/Images/react.png" alt="React" class="h-16 w-16 mb-2" />
+              <span class="text-gray-700">React</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center transition hover:shadow-lg">
+              <img src="/Images/tailwind.png" alt="Tailwind CSS" class="h-16 w-16 mb-2" />
+              <span class="text-gray-700">Tailwind CSS</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center transition hover:shadow-lg">
+              <img src="/Images/node.png" alt="Node.js" class="h-16 w-16 mb-2" />
+              <span class="text-gray-700">Node.js</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center transition hover:shadow-lg">
+              <img src="/Images/redis.png" alt="Redis" class="h-16 w-16 mb-2" />
+              <span class="text-gray-700">Redis</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center transition hover:shadow-lg">
+              <img src="/Images/d3.png" alt="D3" class="h-16 w-16 mb-2" />
+              <span class="text-gray-700">D3.js</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center transition hover:shadow-lg">
+              <img src="/Images/postgresql.png" alt="SQL" class="h-16 w-16 mb-2" />
+              <span class="text-gray-700">PostgreSQL</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center transition hover:shadow-lg">
+              <img src="/Images/django.png" alt="Django" class="h-16 w-16 mb-2" />
+              <span class="text-gray-700">Django</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center transition hover:shadow-lg">
+              <img src="/Images/api.png" alt="API" class="h-16 w-16 mb-2" />
+              <span class="text-gray-700">API</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center transition hover:shadow-lg">
+              <img src="/Images/docker.png" alt="Docker" class="h-16 w-16 mb-2" />
+              <span class="text-gray-700">Docker</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center transition hover:shadow-lg">
+              <img src="/Images/laravel.png" alt="Laravel" class="h-16 w-16 mb-2" />
+              <span class="text-gray-700">Laravel</span>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center transition hover:shadow-lg">
+              <img src="/Images/cpp.png" alt="Cpp" class="h-16 w-16 mb-2" />
+              <span class="text-gray-700">C++</span>
+            </div>
           </div>
         </div>
+      
+      </div>
+
       </main>
     </div>
 
@@ -94,14 +167,15 @@
         // Reset button styles
         document
           .querySelectorAll(".tab-btn")
-          .forEach((btn) => btn.classList.remove("bg-blue-600", "text-white"));
+          .forEach((btn) => btn.classList.remove("bg-yellow-500", "text-white"));
         document
           .querySelectorAll(".tab-btn")
           .forEach((btn) => btn.classList.add("bg-gray-300", "text-gray-800"));
 
         // Highlight the active button
-        event.target.classList.add("bg-blue-600", "text-white");
+        event.target.classList.add("bg-yellow-500", "text-white");
       }
     </script>
+    <script src="/assets/Scripts/star-background.js" defer></script>
   </body>
 </html>

@@ -1,85 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Work</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <script src="/assets/scripts/header.js" defer></script>
-  </head>
-  <body class="bg-gray-100 text-gray-900">
-    <header></header>
 
-    <div class="container mx-auto">
-      <main class="mt-10 px-6">
-        <h1 class="text-4xl font-bold text-center">My Work</h1>
-        <p class="mt-4 text-center text-gray-700">
-          Here are some of the projects I have worked on.
-        </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manny's Work</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="icon" href="/Images/Logos/smyrna-favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/styles/stars.css">
 
-        <!-- Work Grid -->
-        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Project 1 -->
-          <a
-            href="https://example.com/lambeth-data-platform"
-            target="_blank"
-            class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block"
-          >
-            <img
-              src="/assets/images/project1.jpg"
-              alt="Lambeth Open Data Platform"
-              class="rounded-md w-full"
-            />
-            <h3 class="text-xl font-semibold mt-3">
-              Lambeth Open Data Platform
-            </h3>
-            <p class="text-gray-600 text-sm">
-              Developed an interactive climate data visualization dashboard for
-              Lambeth Council.
-            </p>
-          </a>
+  <script src="/assets/scripts/header.js" defer></script>
+</head>
 
-          <!-- Project 2 -->
-          <a
-            href="https://example.com/smyrna-ecommerce"
-            target="_blank"
-            class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block"
-          >
-            <img
-              src="/assets/images/project2.jpg"
-              alt="Smyrna E-Commerce"
-              class="rounded-md w-full"
-            />
-            <h3 class="text-xl font-semibold mt-3">Smyrna E-Commerce</h3>
-            <p class="text-gray-600 text-sm">
-              Built a fully functional online store with Laravel & MySQL.
-            </p>
-          </a>
+<body class="starry-background text-gray-900">
+  <header></header>
 
-          <!-- Project 3 -->
-          <a
-            href="https://example.com/data-dashboard"
-            target="_blank"
-            class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block"
-          >
-            <img
-              src="/assets/images/project3.jpg"
-              alt="Data Dashboard"
-              class="rounded-md w-full"
-            />
-            <h3 class="text-xl font-semibold mt-3">Data Dashboard</h3>
-            <p class="text-gray-600 text-sm">
-              Designed an interactive business intelligence dashboard with D3.js
-              & Power BI.
-            </p>
-          </a>
+  <div class="container mx-auto">
+    <main class="mt-10 px-6">
+      <h1 class="text-4xl font-bold text-gray-300 text-center">My Work</h1>
+      <p class="mt-4 text-center text-gray-100">
+        Here are some of the projects I have worked on.
+      </p>
 
-          <!-- Add more projects here -->
-        </div>
-      </main>
-    </div>
-  </body>
+      <!-- Work Grid -->
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <a href="https://example.com/lambeth-data-platform" target="_blank"
+          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
+          <img src="/assets/images/project1.jpg" alt="Lambeth Open Data Platform" class="rounded-md w-full" />
+          <h3 class="text-xl font-semibold mt-3">
+            <i class="fas fa-chart-line mr-2"></i> Lambeth Open Data Platform
+          </h3>
+          <p class="text-gray-600 text-sm">
+            Developed an interactive climate data visualisation dashboard for
+            Lambeth Council.
+          </p>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="https://example.com/smyrna-ecommerce" target="_blank"
+          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
+          <img src="/assets/images/project2.jpg" alt="Smyrna E-Commerce" class="rounded-md w-full" />
+          <h3 class="text-xl font-semibold mt-3">
+            <i class="fas fa-shopping-cart mr-2"></i> Smyrna E-Commerce
+          </h3>
+          <p class="text-gray-600 text-sm">
+            Built a fully functional online store with vanilla PHP.
+          </p>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="https://example.com/data-dashboard" target="_blank"
+          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
+          <img src="/assets/images/project3.jpg" alt="Data Dashboard" class="rounded-md w-full" />
+          <h3 class="text-xl font-semibold mt-3">
+            <i class="fas fa-tachometer-alt mr-2"></i> Data Dashboard
+          </h3>
+          <p class="text-gray-600 text-sm">
+            Designed an interactive data dashboard for Lambeth Council with D3.js
+            & Python.
+          </p>
+        </a>
+
+        <!-- Project 4 -->
+        <a href="https://example.com/football-analytics" target="_blank"
+          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
+          <img src="/assets/images/project4.jpg" alt="Football Analytics" class="rounded-md w-full" />
+          <h3 class="text-xl font-semibold mt-3">
+            <i class="fas fa-futbol mr-2"></i> Football Analytics
+          </h3>
+          <p class="text-gray-600 text-sm">
+            Created a machine learning model for team performance prediction and player analysis.
+          </p>
+        </a>
+
+        <!-- Project 5 -->
+        <a href="https://example.com/real-estate-tool" target="_blank"
+          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
+          <img src="/assets/images/project5.jpg" alt="Real Estate Analysis Tool" class="rounded-md w-full" />
+          <h3 class="text-xl font-semibold mt-3">
+            <i class="fas fa-home mr-2"></i> Real Estate Analysis Tool
+          </h3>
+          <p class="text-gray-600 text-sm">
+            Developed a web application for property analysis and house price prediction.
+          </p>
+        </a>
+
+        <!-- Project 6 -->
+        <a href="https://example.com/automated-reporting" target="_blank"
+          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
+          <img src="/assets/images/project6.jpg" alt="Automated Reporting System" class="rounded-md w-full" />
+          <h3 class="text-xl font-semibold mt-3">
+            <i class="fas fa-file-alt mr-2"></i> Automated Reporting System
+          </h3>
+          <p class="text-gray-600 text-sm">
+            Built an automated reporting system using Python and SQL for streamlined business insights.
+          </p>
+        </a>
+
+        <!-- Project 7 -->
+        <a href="https://example.com/sentiment-analysis" target="_blank"
+          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
+          <img src="/assets/images/project7.jpg" alt="Sentiment Analysis Tool" class="rounded-md w-full" />
+          <h3 class="text-xl font-semibold mt-3">
+            <i class="fas fa-comment-dots mr-2"></i> Sentiment Analysis Tool
+          </h3>
+          <p class="text-gray-600 text-sm">
+            Developed a tool using NLP to analyse news sentiment around stock prices.
+          </p>
+        </a>
+
+        <!-- Project 8 -->
+        <a href="https://example.com/e-commerce-optimization" target="_blank"
+          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
+          <img src="/assets/images/project8.jpg" alt="E-Commerce Optimization" class="rounded-md w-full" />
+          <h3 class="text-xl font-semibold mt-3">
+            <i class="fas fa-tags mr-2"></i> E-Commerce Optimisation
+          </h3>
+          <p class="text-gray-600 text-sm">
+            Optimised customer experience to build the backend for an e-commerce site.
+          </p>
+        </a>
+
+        <!-- Project 9 -->
+        <a href="https://example.com/algo-trading" target="_blank"
+          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
+          <img src="/assets/images/project9.jpg" alt="Algo Trading in MQL5/AWS" class="rounded-md w-full" />
+          <h3 class="text-xl font-semibold mt-3">
+            <i class="fas fa-sync-alt mr-2"></i> Algorithmic Trading
+          </h3>
+          <p class="text-gray-600 text-sm">
+            Developed an algorithmic trading system using MQL5 integrated with AWS for real-time data analysis.
+          </p>
+        </a>
+
+        <!-- Project 10 -->
+        <a href="https://example.com/financial-market-dashboard" target="_blank"
+          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
+          <img src="/assets/images/project10.jpg" alt="Financial Market Dashboard" class="rounded-md w-full" />
+          <h3 class="text-xl font-semibold mt-3">
+            <i class="fas fa-chart-bar mr-2"></i> Financial Market Dashboard
+          </h3>
+          <p class="text-gray-600 text-sm">
+            Created a dashboard for tracking financial market trends and performance metrics.
+          </p>
+        </a>
+
+      </div>
+    </main>
+  </div>
+  <script src="/assets/Scripts/star-background.js" defer></script>
+</body>
+
 </html>

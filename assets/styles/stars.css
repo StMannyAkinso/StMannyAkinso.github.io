@@ -1,0 +1,50 @@
+/* Colorful night sky background with gradient */
+.starry-background {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(29, 1, 49) 0%, rgb(67, 9, 67) 50%, rgb(20, 36, 49) 100%);
+    z-index: -1;
+}
+
+button{
+    z-index: 3;
+}
+
+/* Style for the stars */
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 0;
+    animation: twinkle 0.5s infinite alternate;
+    /* Animation for twinkling effect */
+}
+
+/* Twinkle animation */
+@keyframes twinkle {
+    0% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animation for star movement */
+@keyframes moveStar {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

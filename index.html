@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Manny's Portfolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -12,71 +12,71 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-
+    <link rel="icon" href="/Images/Logos/smyrna-favicon.png" type="image/x-icon" />
     <script src="/assets/scripts/header.js" defer></script>
+    <link rel="stylesheet" href="/assets/styles/stars.css">
+    <style>
+      img{
+        z-index: 5;
+      }
+    </style>
   </head>
-  <body class="bg-gray-100 text-gray-900">
+  <body class="starry-background text-gray-900">
     <!-- Header -->
     <header></header>
 
     <!-- Main Content -->
     <div class="container mx-auto">
       <main
-        class="mt-20 flex flex-col md:flex-row items-center justify-between px-6"
+        class=" mb-10 flex flex-col md:flex-row items-center justify-between px-6"
       >
         <!-- Left Section: Name, Description, CTA & Social Links -->
-        <div class="md:w-1/2 text-center md:text-left">
-          <h3 class="">Data Driven Web Developer</h3>
-          <h1 class="text-4xl font-extrabold text-gray-900">Manny Akinso</h1>
-          <p class="mt-4 text-lg text-gray-700">
-            I'm a passionate Frontend Developer who loves creating beautiful and
-            functional web experiences.
+        <div class="md:w-1/2 text-center md:text-left p-10">
+          <h3 class="text-gray-100">Data Driven Web Developer</h3>
+          <h1 class="text-4xl font-extrabold text-gray-300">Manny Akinso</h1>
+          <p class="mt-4 text-lg text-gray-100">
+            📍 Kent/London, UK
           </p>
-
+          <p class="mt-4 text-lg text-gray-100">
+          I use data to shape the future, bringing it to life through clear visualisation and a unique perspective. Every system I
+          build is optimised for speed, automation, and conversion, ensuring your digital presence is efficient and effective. My
+          work transforms complex ideas into powerful assets that tell a compelling story and drive real, measurable results. If
+          you're ready to build a digital empire that stands out, let's create something exceptional together.
+          </p>
+        
+        
           <!-- CTA Button -->
-          <a
-            href="/assets/CV.pdf"
-            download
-            class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-blue-700 transition"
-          >
+          <a href="/assets/CV.pdf" download
+            class="mt-6 inline-block bg-purple-600 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-purple-800 transition">
             Download CV
           </a>
-
+        
           <!-- Social Media Links -->
           <div class="mt-6 flex space-x-4 justify-center md:justify-start">
-            <a
-              href="https://github.com/"
-              target="_blank"
-              class="text-gray-600 hover:text-gray-900 text-2xl"
-            >
+            <a href="https://github.com/" target="_blank" class="text-gray-600 hover:text-gray-900 text-2xl">
               <i class="fab fa-github"></i>
             </a>
-            <a
-              href="https://linkedin.com/"
-              target="_blank"
-              class="text-blue-600 hover:text-blue-800 text-2xl"
-            >
+            <a href="https://linkedin.com/" target="_blank" class="text-blue-600 hover:text-blue-800 text-2xl">
               <i class="fab fa-linkedin"></i>
             </a>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              class="text-blue-400 hover:text-blue-600 text-2xl"
-            >
+            <a href="https://twitter.com/" target="_blank" class="text-blue-400 hover:text-blue-600 text-2xl">
               <i class="fab fa-instagram"></i>
             </a>
           </div>
         </div>
 
+
         <!-- Right Section: Profile Image -->
         <div class="md:w-1/2 flex justify-center mt-10 md:mt-0">
           <img
-            src="/assets/images/profile.png"
+            src="/Images/toon-manny.png"
             alt="Profile Picture"
-            class="w-80 h-80 rounded-full shadow-lg"
+            class=""
           />
         </div>
       </main>
     </div>
+
+    <script src="/assets/Scripts/star-background.js" defer></script>
   </body>
 </html>

@@ -1,127 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <script src="/assets/scripts/header.js" defer></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body class="bg-gray-100 text-gray-900">
-    <header></header>
 
-    <div class="container mx-auto">
-      <main class="mt-10 px-6">
-        <h1 class="text-4xl font-bold text-center">Services</h1>
-        <p class="mt-4 text-center text-gray-700">
-          I offer flexible engagement models, whether you need a **freelancer
-          for a project** or a **part-time specialist** for ongoing work.
-        </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manny's Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="icon" href="/Images/Logos/smyrna-favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/styles/stars.css">
 
-        <!-- Services Grid -->
-        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Web Development -->
-          <div
-            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105"
-          >
-            <div class="text-blue-600 text-4xl mb-4">
-              <i class="fas fa-code"></i>
-            </div>
-            <h3 class="text-2xl font-semibold">Web Development</h3>
-            <p class="mt-2 text-gray-700">
-              Full-stack web development, including front-end (React,
-              JavaScript, Tailwind) and back-end (PHP, Django, Node.js).
-            </p>
-            <ul class="mt-4 text-gray-600 text-sm">
-              <li>
-                <strong>🛠️ As a Freelancer:</strong> Custom website development,
-                landing pages, CMS integration.
-              </li>
-              <li>
-                <strong>⏳ Part-time/Hourly:</strong> Ongoing site maintenance,
-                feature updates, bug fixes.
-              </li>
-            </ul>
+  <script src="/assets/scripts/header.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="starry-background text-gray-900">
+  <header></header>
+
+  <div class="container mx-auto">
+    <main class="mt-10 px-6">
+      <h1 class="text-4xl font-bold text-gray-300 text-center">Services</h1>
+      <p class="mt-4 text-center text-gray-100">
+        I provide flexible engagement options to meet your needs. Whether you're looking for a <strong>Freelancer</strong> to handle a specific
+        project or a <strong>Part-Time Specialist</strong> for ongoing support, I can accommodate your requirements.
+      </p>
+
+      <!-- Services Grid -->
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Web Development -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105">
+          <div class="text-blue-600 text-4xl mb-4">
+            <i class="fas fa-code"></i>
           </div>
-
-          <!-- Data Analytics & Visualization -->
-          <div
-            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105"
-          >
-            <div class="text-green-600 text-4xl mb-4">
-              <i class="fas fa-chart-line"></i>
-            </div>
-            <h3 class="text-2xl font-semibold">
-              Data Analytics & Visualization
-            </h3>
-            <p class="mt-2 text-gray-700">
-              Creating interactive dashboards using D3.js, Power BI, and Python
-              to transform data into meaningful insights.
-            </p>
-            <ul class="mt-4 text-gray-600 text-sm">
-              <li>
-                <strong>📊 As a Freelancer:</strong> Custom dashboards, data
-                visualization, business intelligence reports.
-              </li>
-              <li>
-                <strong>⏳ Part-time/Hourly:</strong> Data cleaning, ongoing
-                report updates, predictive analytics.
-              </li>
-            </ul>
+          <h3 class="text-2xl font-semibold">Web Development</h3>
+          <p class="mt-2 text-gray-700">
+            Engineering digital ecosystems that generate power, influence, and automation. My philosophy blends
+            efficiency, aesthetics, and intelligence into every product.
+          </p>
+          <ul class="mt-4 text-gray-600 text-sm">
+            <li>
+              <strong>🔧 Strategic Solutions:</strong> Custom web platforms that command attention, drive revenue, and
+              create leverage.
+            </li>
+            <li>
+              <strong>⚙️ Automated Ecosystems:</strong> Self-sustaining systems that minimize manual work and maximize
+              impact.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Data Analytics & Visualization -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105">
+          <div class="text-green-600 text-4xl mb-4">
+            <i class="fas fa-chart-line"></i>
           </div>
-
-          <!-- E-commerce Solutions -->
-          <div
-            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105"
-          >
-            <div class="text-red-500 text-4xl mb-4">
-              <i class="fas fa-shopping-cart"></i>
-            </div>
-            <h3 class="text-2xl font-semibold">E-commerce Solutions</h3>
-            <p class="mt-2 text-gray-700">
-              Building and optimizing online stores with Shopify, WooCommerce,
-              and Laravel for a seamless shopping experience.
-            </p>
-            <ul class="mt-4 text-gray-600 text-sm">
-              <li>
-                <strong>🛒 As a Freelancer:</strong> Full e-commerce site
-                development, product listing setup, payment integrations.
-              </li>
-              <li>
-                <strong>⏳ Part-time/Hourly:</strong> Store maintenance,
-                security updates, conversion rate optimization.
-              </li>
-            </ul>
+          <h3 class="text-2xl font-semibold">
+            Data Analytics & Visualisation
+          </h3>
+          <p class="mt-2 text-gray-700">
+            Beyond analytics, I see patterns and hidden structures, creating intelligent interfaces that transform how
+            data is utilised.
+          </p>
+          <ul class="mt-4 text-gray-600 text-sm">
+            <li>
+              <strong>📊 Insight Architect:</strong> Developing custom dashboards that bring clarity and actionable
+              insights.
+            </li>
+            <li>
+              <strong>🔍 Real-Time Adaptation:</strong> Creating systems that adjust dynamically for business
+              intelligence, algorithmic trading and more.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- E-commerce Solutions -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105">
+          <div class="text-red-500 text-4xl mb-4">
+            <i class="fas fa-shopping-cart"></i>
           </div>
+          <h3 class="text-2xl font-semibold">E-commerce Solutions</h3>
+          <p class="mt-2 text-gray-700">
+            Building and optimising online stores with a focus on intelligent interfaces and seamless customer
+            experiences.
+          </p>
+          <ul class="mt-4 text-gray-600 text-sm">
+            <li>
+              <strong>🛒 Elite Development:</strong> Crafting e-commerce platforms that enhance brand presence and drive
+              conversions.
+            </li>
+            <li>
+              <strong>🔑 Automated Personalisation:</strong> Implementing AI-driven systems for customised shopping
+              experiences.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- AI & Automation Development -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105">
+          <div class="text-purple-600 text-4xl mb-4">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3 class="text-2xl font-semibold">AI & Automation Development</h3>
+          <p class="mt-2 text-gray-700">
+            Implementing smart automation and AI-assisted tools to enhance efficiency, reduce manual tasks, and
+            improve decision-making.
+          </p>
+          <ul class="mt-4 text-gray-600 text-sm">
+            <li>
+              <strong>⚙️ Process Automation:</strong> Automating repetitive tasks to save time and improve productivity.
+            </li>
+            <li>
+              <strong>📊 AI-Driven Insights:</strong> Using AI tools to gain actionable insights from data for smarter
+              business decisions.
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <section class="mt-10 bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold">Engagement Options & Pricing</h2>
 
-          <!-- Technical Consultation -->
-          <div
-            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105"
-          >
-            <div class="text-purple-600 text-4xl mb-4">
-              <i class="fas fa-lightbulb"></i>
-            </div>
-            <h3 class="text-2xl font-semibold">Technical Consultation</h3>
-            <p class="mt-2 text-gray-700">
-              Helping businesses improve website performance, security, and UX
-              through expert consultation.
-            </p>
-            <ul class="mt-4 text-gray-600 text-sm">
-              <li>
-                <strong>⏳ Part-time/Hourly:</strong> Ongoing technical support,
-                debugging, performance optimizations.
+        <!-- Option 1: Freelance Work (Project-Based) -->
+          <h3 class="text-2xl font-semibold mt-4">Option 1: Freelance Work (Project-Based)</h3>
+          <p class="mt-2 text-gray-700">
+            Hire me as a <strong>freelancer</strong> for specific tasks, projects, or consultations. Pricing is based on an
+            hourly rate with minimum engagement requirements.
+          </p>
+          <ul class="mt-4 text-gray-600">
+            <li>• <strong>Quick Tasks:</strong> Minimum 1-hour charge</li>
+            <li>• <strong>Small Projects:</strong> Minimum 5-hour block</li>
+            <li>• <strong>Larger Projects (10+ hours):</strong> £1,000 upfront</li>
+            <li>• <strong>Enterprise Projects (50+ hours):</strong> £3,000 upfront</li>
+          </ul>
+          <p class="mt-4 text-gray-600 text-sm">
+            <strong>Note:</strong> The upfront payment is separate from the hourly rate and is required to secure the project.
+          </p>
+      
+        <!-- Option 2: Part-Time Team Member -->
+          <h2 class="text-2xl font-semibold mt-4">Option 2: Part-Time Team Member (Fixed-Term Contract)</h2>
+          <p class="mt-2 text-gray-700">
+            If your business requires ongoing expertise but you're not ready for a full-time hire, I offer part-time engagement
+            with
+            <strong>fixed-term contracts</strong> of various lengths (e.g., 6 months, 12 months, 18 months, etc.). This ensures
+            stability and avoids the need for monthly renegotiations.
+          </p>
+        
+          <h3 class="text-xl font-semibold mt-4">Key Features of the Contract:</h3>
+          <ul class="mt-4 text-gray-600">
+            <li><strong>Contract Duration:</strong> Flexible contract terms based on your business needs (e.g., 3, 6, or 12
+              months). You choose the length.</li>
+            <li><strong>Monthly Hours (40–60 hours):</strong> Based on your needs, we'll agree upon the number of hours per
+              month (between 40 and 80 hours).</li>
+            <li><strong>Set Monthly Rate:</strong> The agreed-upon number of hours will be invoiced at the beginning of each
+              month at your selected service level rate (Standard, Advanced, or Expert).</li>
+          </ul>
+        
+          <h3 class="text-xl font-semibold mt-4">Overtime Hours:</h3>
+          <p class="text-gray-700">
+            If you need more than <strong>60 hours</strong> in any given month, the additional hours will be
+            <strong>overtime</strong> and billed at a rate of <strong>1.5x</strong> the agreed hourly rate.
+          </p>
+
+      
+        <!-- Pricing Table -->
+        <h4 class="text-lg font-semibold mt-4 text-center">Service Pricing</h4>
+        <table class="mt-4 w-full bg-white shadow-lg rounded-lg border border-gray-300">
+          <thead class="bg-gray-200">
+            <tr>
+              <th class="border border-gray-300 px-4 py-2 text-left">Service</th>
+              <th class="border border-gray-300 px-4 py-2 text-left">Standard Rate</th>
+              <th class="border border-gray-300 px-4 py-2 text-left">Advanced</th>
+              <th class="border border-gray-300 px-4 py-2 text-left">Expert</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white hover:bg-gray-100 transition duration-200">
+              <td class="border border-gray-300 px-4 py-2">Web Development</td>
+              <td class="border border-gray-300 px-4 py-2"><strong>£50/hr</strong> (Building basic websites and landing pages)
+              </td>
+              <td class="border border-gray-300 px-4 py-2"><strong>£80/hr</strong> (Developing dynamic web applications with
+                some AI features)</td>
+              <td class="border border-gray-300 px-4 py-2"><strong>£125/hr</strong> (Creating full-stack applications with
+                advanced AI capabilities)</td>
+            </tr>
+            <tr class="bg-white hover:bg-gray-100 transition duration-200">
+              <td class="border border-gray-300 px-4 py-2">Data Analytics</td>
+              <td class="border border-gray-300 px-4 py-2"><strong>£50/hr</strong> (Conducting basic data analysis and
+                reporting)</td>
+              <td class="border border-gray-300 px-4 py-2"><strong>£75/hr</strong> (Designing interactive dashboards with
+                limited AI features)</td>
+              <td class="border border-gray-300 px-4 py-2"><strong>£100/hr</strong> (Implementing advanced analytics with
+                AI-driven insights)</td>
+            </tr>
+            <tr class="bg-white hover:bg-gray-100 transition duration-200">
+              <td class="border border-gray-300 px-4 py-2">E-commerce</td>
+              <td class="border border-gray-300 px-4 py-2"><strong>£75/hr</strong> (Creating basic e-commerce platforms, such as
+                on Wix/Shopify)</td>
+              <td class="border border-gray-300 px-4 py-2"><strong>£100/hr</strong> (Developing custom e-commerce solutions with
+                some basic AI features)</td>
+              <td class="border border-gray-300 px-4 py-2"><strong>£150/hr</strong> (Creating advanced e-commerce systems with
+                multiple AI capabilities and complex features)</td>
+            </tr>
+            <tr class="bg-white hover:bg-gray-100 transition duration-200">
+              <td class="border border-gray-300 px-4 py-2">AI Development</td>
+              <td class="border border-gray-300 px-4 py-2"><strong>£100/hr</strong> (Basic AI features, such as chatbots or
+                simple automation)</td>
+              <td class="border border-gray-300 px-4 py-2"><strong>£150/hr</strong> (AI-powered systems for more advanced
+                automation and insights)</td>
+              <td class="border border-gray-300 px-4 py-2"><strong>£200/hr</strong> (Building complex AI models for predictive
+                analytics, AI-driven decision-making, and real-time automation)</td>
+            </tr>
+          </tbody>
+        </table>
+
+      
+      </section>
+
+
+      <section class="max-w-4xl mx-auto mt-10 bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold text-center mb-4">How to Proceed</h2>
+        <div class="flex justify-center mb-4">
+          <button id="toggleProject" class="bg-yellow-400 mx-2 text-white px-4 py-2 rounded-l focus:outline-none">Hire for
+            Project</button>
+          <button id="toggleEmployment" class="bg-yellow-400 mx-2 text-white px-4 py-2 rounded-r focus:outline-none">Hire for
+            Part-Time Role</button>
+        </div>
+      
+        <div id="projectSection" class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+          <h4 class="text-2xl font-bold mb-4 text-center">For Project-Based Work (Fixed-Term Contract)</h4>
+          <div class="relative">
+            <div class="absolute left-0 top-0 h-full border-l-2 border-gray-300"></div>
+            <ol class="mt-2 space-y-8">
+              <li class="relative flex items-start">
+                <div class="absolute w-6 h-6 bg-yellow-500 rounded-full -left-3"></div>
+                <div class="ml-4">
+                  <strong class="text-lg">Initial Contact:</strong>
+                  <p class="text-gray-600">Send me a brief description of your project idea, outlining your goals, requirements,
+                    and any specific features you want. This initial communication helps me understand the scope of the project.
+                  </p>
+                </div>
               </li>
-            </ul>
+              <li class="relative flex items-start">
+                <div class="absolute w-6 h-6 bg-yellow-500 rounded-full -left-3"></div>
+                <div class="ml-4">
+                  <strong class="text-lg">Consultation:</strong>
+                  <p class="text-gray-600">We’ll schedule a consultation to discuss your needs in more detail. This helps us
+                    agree on project timelines, payment structure, and other specifics related to the fixed-term contract.</p>
+                </div>
+              </li>
+              <li class="relative flex items-start">
+                <div class="absolute w-6 h-6 bg-yellow-500 rounded-full -left-3"></div>
+                <div class="ml-4">
+                  <strong class="text-lg">Contract Proposal:</strong>
+                  <p class="text-gray-600">Following our consultation, I will send a formal contract proposal outlining the
+                    project scope, deliverables, timeline, payment structure, and the agreed-upon service level. You can review
+                    the proposal and suggest any modifications.</p>
+                </div>
+              </li>
+              <li class="relative flex items-start">
+                <div class="absolute w-6 h-6 bg-yellow-500 rounded-full -left-3"></div>
+                <div class="ml-4">
+                  <strong class="text-lg">Contract Agreement:</strong>
+                  <p class="text-gray-600">Once the contract proposal is finalized, we will agree on the terms and sign the
+                    contract. This step will lock in the details, including payment schedules and milestones for the project.
+                  </p>
+                </div>
+              </li>
+              <li class="relative flex items-start">
+                <div class="absolute w-6 h-6 bg-yellow-500 rounded-full -left-3"></div>
+                <div class="ml-4">
+                  <strong class="text-lg">Project Kick-off:</strong>
+                  <p class="text-gray-600">After signing the contract, we will schedule a kick-off meeting to discuss the
+                    project’s specific milestones, expectations, and the communication channels for the duration of the
+                    fixed-term contract.</p>
+                </div>
+              </li>
+              <li class="relative flex items-start">
+                <div class="absolute w-6 h-6 bg-yellow-500 rounded-full -left-3"></div>
+                <div class="ml-4">
+                  <strong class="text-lg">Development Phase:</strong>
+                  <p class="text-gray-600">Work on the project will commence as outlined in the contract. I'll keep you updated
+                    on the progress, and we’ll meet regularly (as agreed upon in the contract) to review the status and make any
+                    adjustments if necessary.</p>
+                </div>
+              </li>
+              <li class="relative flex items-start">
+                <div class="absolute w-6 h-6 bg-yellow-500 rounded-full -left-3"></div>
+                <div class="ml-4">
+                  <strong class="text-lg">Review and Revisions:</strong>
+                  <p class="text-gray-600">Upon completing the initial work, I’ll deliver the project for review. You'll have
+                    the opportunity to test the features, provide feedback, and request any necessary revisions as per the terms
+                    of the contract.</p>
+                </div>
+              </li>
+              <li class="relative flex items-start">
+                <div class="absolute w-6 h-6 bg-yellow-500 rounded-full -left-3"></div>
+                <div class="ml-4">
+                  <strong class="text-lg">Final Delivery:</strong>
+                  <p class="text-gray-600">Once all revisions are complete and you are satisfied with the work, the final
+                    product will be delivered along with any necessary documentation and usage instructions.</p>
+                </div>
+              </li>
+              <li class="relative flex items-start">
+                <div class="absolute w-6 h-6 bg-yellow-500 rounded-full -left-3"></div>
+                <div class="ml-4">
+                  <strong class="text-lg">Ongoing Support (Optional):</strong>
+                  <p class="text-gray-600">After the project is completed, I offer ongoing support and maintenance options as
+                    per the contract. This ensures that the project continues to run smoothly and any post-delivery issues are
+                    addressed promptly.</p>
+                </div>
+              </li>
+            </ol>
           </div>
         </div>
-      </main>
-    </div>
-  </body>
+
+
+
+      
+        <div id="employmentSection" class="hidden max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+          <h4 class="text-2xl font-bold mb-4 text-center">For Part-Time Contract Roles</h4>
+          <div class="relative">
+            <div class="absolute left-0 top-0 h-full border-l-2 border-gray-300"></div>
+            <ol class="mt-2 space-y-8">
+              <li class="relative flex items-start">
+                <div class="absolute w-6 h-6 bg-yellow-500 rounded-full -left-3"></div>
+                <div class="ml-4">
+                  <strong class="text-lg">Initial Contact:</strong>
+                  <p class="text-gray-600">If you’re interested in a fixed-term contract, start by sending a message outlining
+                    your organization and the role you're looking to fill.</p>
+                </div>
+              </li>
+              <li class="relative flex items-start">
+                <div class="absolute w-6 h-6 bg-yellow-500 rounded-full -left-3"></div>
+                <div class="ml-4">
+                  <strong class="text-lg">Preliminary Discussion:</strong>
+                  <p class="text-gray-600">We’ll schedule a discussion to ensure that my skills match your needs, and to define
+                    the details of the role, such as hours and the duration of the contract (e.g., 3, 6, or 12 months).</p>
+                </div>
+              </li>
+              <li class="relative flex items-start">
+                <div class="absolute w-6 h-6 bg-yellow-500 rounded-full -left-3"></div>
+                <div class="ml-4">
+                  <strong class="text-lg">Contract Proposal:</strong>
+                  <p class="text-gray-600">If we decide to move forward, I will send a formal contract proposal, outlining the
+                    scope of work, expected monthly hours, and compensation based on the agreed-upon service level (Standard,
+                    Advanced, or Expert).</p>
+                </div>
+              </li>
+              <li class="relative flex items-start">
+                <div class="absolute w-6 h-6 bg-yellow-500 rounded-full -left-3"></div>
+                <div class="ml-4">
+                  <strong class="text-lg">Agreement Finalization:</strong>
+                  <p class="text-gray-600">Upon acceptance, we'll finalize the contract terms and formalize the agreement,
+                    including payment terms, project deliverables, and expectations for the contract's duration.</p>
+                </div>
+              </li>
+              <li class="relative flex items-start">
+                <div class="absolute w-6 h-6 bg-yellow-500 rounded-full -left-3"></div>
+                <div class="ml-4">
+                  <strong class="text-lg">Onboarding and Integration:</strong>
+                  <p class="text-gray-600">We’ll set a start date for the contract and begin the onboarding process to integrate
+                    me into your team and workflow.</p>
+                </div>
+              </li>
+              <li class="relative flex items-start">
+                <div class="absolute w-6 h-6 bg-yellow-500 rounded-full -left-3"></div>
+                <div class="ml-4">
+                  <strong class="text-lg">Ongoing Collaboration:</strong>
+                  <p class="text-gray-600">During the contract, we will collaborate closely, ensuring that I meet your business
+                    needs while maintaining open communication throughout the term.</p>
+                </div>
+              </li>
+              <li class="relative flex items-start">
+                <div class="absolute w-6 h-6 bg-yellow-500 rounded-full -left-3"></div>
+                <div class="ml-4">
+                  <strong class="text-lg">Contract Review and Renewal (if applicable):</strong>
+                  <p class="text-gray-600">As the contract term approaches its end, we can review the progress made and discuss
+                    the possibility of contract renewal, extension, or transition to another phase, ensuring alignment for
+                    continued success.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+
+        <div class="flex justify-center my-4">
+          <a href="/contact.html" class="mt-2 bg-yellow-400 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
+            Get In Touch
+          </a>
+        </div>
+        
+      </section>
+      
+      <script>
+        document.getElementById("toggleProject").addEventListener("click", function () {
+          document.getElementById("projectSection").classList.remove("hidden");
+          document.getElementById("employmentSection").classList.add("hidden");
+        });
+
+        document.getElementById("toggleEmployment").addEventListener("click", function () {
+          document.getElementById("employmentSection").classList.remove("hidden");
+          document.getElementById("projectSection").classList.add("hidden");
+        });
+      </script>
+    </main>
+  </div>
+  <script src="/assets/Scripts/star-background.js" defer></script>
+</body>
+
 </html>
