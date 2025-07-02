@@ -1,267 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manny | About</title>
+    <meta
+      name="description"
+      content="Learn more about Manny, a data-driven web developer specialising in transforming complex data into intuitive, visually engaging web experiences."
+    />
+    <meta
+      name="keywords"
+      content="Manny, web developer, data-driven, data analytics, web design, web development, data visualisation, portfolio"
+    />
+    <meta name="author" content="Manny Akinso" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Manny - Data-Driven Web Developer</title>
-  <meta name="description" content="Learn more about Manny, a data-driven web developer specialising in transforming complex data into intuitive, visually engaging web experiences.">
-  <meta name="keywords" content="Manny, web developer, data-driven, data analytics, web design, web development, data visualisation, portfolio">
-  <meta name="author" content="Manny Akinso">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <link rel="icon" href="/Images/Logos/smyrna-favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="/assets/styles/stars.css">
-  <script src="/assets/Scripts/header.js" defer></script>
-  <style>
-    #right-section{
-      max-height: 70vh;
-    }
-  </style>
-</head>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link
+      rel="icon"
+      href="/Images/Logos/smyrna-favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/assets/styles/stars.css" />
+    <script src="/assets/Scripts/header.js" defer></script>
+    <meta
+      property="og:title"
+      content="About Manny - Data-Driven Web Developer"
+    />
+    <meta
+      property="og:description"
+      content="Learn more about Manny, a data-driven web developer specialising in transforming complex data into intuitive, visually engaging web experiences."
+    />
+    <meta property="og:image" content="/Images/Logos/smyrna-favicon.png" />
+    <meta
+      property="og:url"
+      content="https://stmannyakinso.github.io/about.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="About Manny - Data-Driven Web Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Learn more about Manny, a data-driven web developer specialising in transforming complex data into intuitive, visually engaging web experiences."
+    />
+    <meta name="twitter:image" content="/Images/Logos/smyrna-favicon.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Manny",
+        "description": "Learn more about Manny, a data-driven web developer specialising in transforming complex data into intuitive, visually engaging web experiences.",
+        "url": "https://stmannyakinso.github.io/about.html"
+      }
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      defer
+    ></script>
+    <script src="/assets/Scripts/animations/animations-about.js" defer></script>
 
-<body class="starry-background text-gray-900 font-sans">
-  <header></header>
+    <style>
+      #right-section {
+        max-height: 70vh;
+      }
+    </style>
+  </head>
+  <body class="starry-background text-gray-900 font-sans">
+    <header></header>
 
-  <div class="container mx-auto mt-10">
-    <main class="flex flex-col md:flex-row items-start justify-between px-6">
-      <!-- Left Section -->
-      <div class="md:w-1/3 bg-purple-50 shadow-lg rounded-lg z-10 p-6 mx-4">
-        <h2 class="text-3xl font-bold text-purple-800 mb-4">Why Choose Me?</h2>
-        <p class="text-gray-700 mb-4">
-          I transform data into compelling visual experiences that drive engagement and results, ensuring your vision is
-          realised through innovative design and strategic insight.
-        </p>
-        <!-- Navigation Buttons -->
-        <div class="mt-6 space-y-3">
-          <button onclick="showSection('about')"
-            class="tab-btn bg-purple-500  px-6 py-2 rounded-lg w-full hover:bg-purple-600 transition">
-            About
-          </button>
-          <button onclick="showSection('experience')"
-            class="tab-btn bg-purple-200  px-6 py-2 rounded-lg w-full hover:bg-purple-300 transition">
-            Experience
-          </button>
-          <button onclick="showSection('skills')"
-            class="tab-btn bg-purple-200  px-6 py-2 rounded-lg w-full hover:bg-purple-300 transition">
-            Skills
-          </button>
-        </div>
-      </div>
-
-      <!-- Right Section (Content Updates Dynamically) -->
-      <div id="right-section"
-        class="md:w-2/3 mt-10 md:mt-0 bg-purple-50 shadow-lg rounded-lg p-6 mb-10 mx-4 overflow-y-auto z-10">
-        <div id="about" class="tab-content">
-          <h3 class="text-3xl font-bold text-purple-800 mb-4">About Me</h3>
-          <p class="mt-4 text-gray-700">
-            I am Manny, a data-driven web developer specialising in transforming complex data into intuitive,
-            visually engaging web experiences. I use data analytics to optimise websites and dashboards, creating
-            dynamic visualisations that enhance user engagement and drive conversion. With a strong foundation in both
-            web development and data science, I excel at managing data flows, ensuring that every element of a website
-            serves a purpose aligned with business goals. I enjoy crafting seamless digital experiences that
-            not only tell a story, but also empower users through clarity and insight. Let's connect to bring your data
-            to life!
-          </p>
-        </div>
-      
-        <div id="experience" class="tab-content hidden">
-          <h3 class="text-3xl font-bold text-purple-800 mb-4">Experience</h3>
-          <div class="mt-4 text-gray-700 space-y-4">
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md transition hover:shadow-lg">
-              <h4 class="font-bold text-lg">Data Analyst</h4>
-              <p class="text-gray-600">Lambeth Council | 2023 - Present</p>
-              <p>
-                At Lambeth Council, I analyse complex data to guide key decisions and improve public services. By transforming raw data
-                into actionable insights, I help shape policies and strategies that enhance service delivery, ensuring they are both
-                effective and responsive to the community's needs.
-              </p>
-            </div>
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md transition hover:shadow-lg">
-              <h4 class="font-bold text-lg">Founder & Lead Developer</h4>
-              <p class="text-gray-600">Smyrna | 2022 - Present</p>
-              <p>
-                As the founder and lead developer of Smyrna, I’ve created an e-commerce platform that prioritises user experience and
-                performance. By integrating data-driven strategies, I’ve built a platform that not only drives conversions but also
-                continuously adapts to the evolving needs of the market, helping Smyrna succeed in a competitive online space.
-              </p>
-            </div>
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md transition hover:shadow-lg">
-              <h4 class="font-bold text-lg">Founder & Team Lead</h4>
-              <p class="text-gray-600">Smyrna Aesthetics | 2024 - Present</p>
-              <p>
-                I launched Smyrna Aesthetics to help businesses enhance their online presence, leading a team that creates custom
-                websites powered by Cerebro, an AI-powered multi-tenant platform. Cerebro automates analytics across industries like football,
-                finance, real estate, and e-commerce, enabling smarter, data-driven decision-making while seamlessly integrating into
-                website development.
-              </p>
-            </div>
-          </div>
-        </div>
-      
-        <div id="skills" class="tab-content hidden">
-          <h3 class="text-3xl font-bold text-purple-800 mb-4">Skills</h3>
-          <p>I am well-versed in a variety of technologies, but I believe that skills go beyond specific tools. My focus is on
-            continuously evolving and adapting to new technologies, as I am always eager to learn and grow in my craft.</p>
-          <!-- Programming Languages -->
-          <div class="mt-6">
-            <h4 class="text-xl font-semibold text-gray-800 mb-2">Programming Languages</h4>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-          
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/python.png" alt="Python" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">Python</span>
-              </div>
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/php.png" alt="PHP" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">PHP</span>
-              </div>
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/javascript.png" alt="JavaScript" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">JavaScript</span>
-              </div>
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/cpp.png" alt="C++" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">C++</span>
-              </div>
-            </div>
-          </div>
-        
-          <!-- Frontend Development -->
-          <div class="mt-6">
-            <h4 class="text-xl font-semibold text-gray-800 mb-2">Frontend Development</h4>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/html.png" alt="HTML" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">HTML</span>
-              </div>
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/tailwind.png" alt="Tailwind CSS" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">Tailwind CSS</span>
-              </div>
-              
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/react.png" alt="React" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">React</span>
-              </div>
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/d3.png" alt="D3.js" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">D3.js</span>
-              </div>
-            </div>
-          </div>
-        
-          <!-- Backend Development -->
-          <div class="mt-6">
-            <h4 class="text-xl font-semibold text-gray-800 mb-2">Backend Development</h4>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/node.png" alt="Node.js" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">Node.js</span>
-              </div>
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/django.png" alt="Django" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">Django</span>
-              </div>
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/laravel.png" alt="Laravel" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">Laravel</span>
-              </div>
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/fastapi.png" alt="FastAPI" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">FastAPI</span>
-              </div>
-            </div>
-          </div>
-        
-          <!-- Databases -->
-          <div class="mt-6">
-            <h4 class="text-xl font-semibold text-gray-800 mb-2">Databases</h4>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/mysql.png" alt="MySQL" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">MySQL</span>
-              </div>
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/postgresql.png" alt="PostgreSQL" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">PostgreSQL</span>
-              </div>
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/redis.png" alt="Redis" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">Redis</span>
-              </div>
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/excel.png" alt="excel" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">Excel</span>
-              </div>
-            </div>
-          </div>
-        
-          <!-- DevOps & Tools -->
-          <div class="mt-6">
-            <h4 class="text-xl font-semibold text-gray-800 mb-2">Cloud/DevOps & Tools</h4>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/aws.png" alt="aws" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">AWS</span>
-              </div>
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/docker.png" alt="Docker" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">Docker</span>
-              </div>
-            </div>
-          </div>
-        
-          <!-- CMS & E-Commerce -->
-          <div class="mt-6">
-            <h4 class="text-xl font-semibold text-gray-800 mb-2">CMS & E-Commerce</h4>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/shopify.png" alt="Shopify" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">Shopify</span>
-              </div>
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/wordpress.png" alt="WordPress" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">WordPress</span>
-              </div>
-              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transition">
-                <img src="/Images/ionos.png" alt="Ionos" class="h-16 w-16 mb-2" />
-                <span class="text-gray-700">Ionos</span>
-              </div>
-            </div>
-          </div>
+    <div class="container mx-auto mt-10">
+      <main class="flex flex-col md:flex-row items-start justify-between px-6">
+        <!-- Left Section (Static Profile & Tabs Container) -->
+        <div
+          id="profile-section"
+          class="md:w-1/3 bg-purple-50 shadow-lg rounded-lg z-10 p-6 mx-4"
+        >
+          <!-- info and tabs will be rendered by JS -->
         </div>
 
-      
-      </div>
-
+        <!-- Right Section (Dynamic Content Container) -->
+        <section
+          id="right-section"
+          class="md:w-2/3 mt-10 md:mt-0 bg-purple-50 shadow-lg rounded-lg p-6 mb-10 mx-4 overflow-y-auto z-10"
+        >
+          <!-- content rendered by JS -->
+        </section>
       </main>
     </div>
 
-    <!-- JavaScript for Tabs -->
-    <script>
-  function showSection(section) {
-    // Hide all sections
-    document
-      .querySelectorAll(".tab-content")
-      .forEach((div) => div.classList.add("hidden"));
-    // Show the selected section
-    document.getElementById(section).classList.remove("hidden");
-
-    // Reset button styles
-    document
-      .querySelectorAll(".tab-btn")
-      .forEach((btn) => {
-        // Reset to default gray button style
-        btn.classList.remove("bg-purple-500", "text-white", "hover:bg-purple-600");
-        btn.classList.add("bg-purple-200", "text-yellow", "hover:bg-purple-300");
-      });
-
-    // Highlight the active button
-    
-    event.target.classList.add("bg-purple-500", "text-red", "hover:bg-purple-600");
-  }
-</script>
-
+    <script type="module" src="/assets/Scripts/about.js"></script>
     <script src="/assets/Scripts/star-background.js" defer></script>
   </body>
 </html>

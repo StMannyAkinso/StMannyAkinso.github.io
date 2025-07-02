@@ -1,159 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manny | Work</title>
+    <meta
+      name="description"
+      content="Explore Manny's portfolio of web development projects, showcasing expertise in data analytics, e-commerce, and more."
+    />
+    <meta
+      name="keywords"
+      content="Manny, web development, portfolio, projects, data analytics, e-commerce, web design"
+    />
+    <meta name="author" content="Manny Akinso" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="/Images/Logos/smyrna-favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/assets/styles/stars.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manny's Work - Web Development Projects</title>
-  <meta name="description" content="Explore Manny's portfolio of web development projects, showcasing expertise in data analytics, e-commerce, and more.">
-  <meta name="keywords" content="Manny, web development, portfolio, projects, data analytics, e-commerce, web design">
-  <meta name="author" content="Manny Akinso">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="icon" href="/Images/Logos/smyrna-favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="/assets/styles/stars.css">
+    <meta
+      property="og:title"
+      content="Manny's Work - Web Development Projects"
+    />
+    <meta
+      property="og:description"
+      content="Explore Manny's portfolio of web development projects, showcasing expertise in data analytics, e-commerce, and more."
+    />
+    <meta property="og:image" content="/Images/Logos/smyrna-favicon.png" />
+    <meta
+      property="og:url"
+      content="https://stmannyakinso.github.io/work.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Manny's Work - Web Development Projects"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore Manny's portfolio of web development projects, showcasing expertise in data analytics, e-commerce, and more."
+    />
+    <meta name="twitter:image" content="/Images/Logos/smyrna-favicon.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Portfolio",
+        "name": "Manny's Work",
+        "description": "Explore Manny's portfolio of web development projects, showcasing expertise in data analytics, e-commerce, and more.",
+        "url": "https://stmannyakinso.github.io/work.html"
+      }
+    </script>
 
-  <script src="/assets/Scripts/header.js" defer></script>
-</head>
+    <script src="/assets/Scripts/header.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      defer
+    ></script>
+    <script src="/assets/Scripts/animations-work.js" defer></script>
+  </head>
 
-<body class="starry-background text-gray-900">
-  <header></header>
+  <body class="starry-background text-gray-900">
+    <header></header>
 
-  <div class="container mx-auto">
-    <main class="mt-10 px-6">
-      <h1 class="text-4xl font-bold text-gray-300 text-center">My Work</h1>
-      <p class="mt-4 text-center text-gray-100">
-        Here are some of the projects I have worked on.
-      </p>
+    <div class="container mx-auto">
+      <main class="px-6">
+        <h1 class="text-4xl font-bold text-gray-300 text-center">My Work</h1>
+        <p class="mt-4 text-center text-gray-100">
+          Here are some of the projects I have worked on.
+        </p>
 
-      <!-- Work Grid -->
-      <div class="mt-10 mb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Project 1 -->
-        <a href="" target="_blank"
-          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
-          <img src="/assets/images/project1.jpg" alt="Lambeth Open Data Platform" class="rounded-md w-full" />
-          <h3 class="text-2xl font-bold text-purple-800 mt-4">
-            <i class="fas fa-chart-line mr-2"></i> Lambeth Open Data Platform
-          </h3>
-          <p class="text-gray-600 text-sm">
-            Developed an interactive climate data visualisation dashboard for
-            Lambeth Council.
-          </p>
-        </a>
+        <!-- Project Layout -->
+        <div
+          id="project-grid"
+          class="mt-10 mb-10 grid grid-cols-4 grid-rows-4 gap-4"
+        >
+          <!-- Main Feature Project -->
+          <div
+            id="main-feature"
+            class="row-span-3 col-span-3 bg-purple-100 p-6 rounded-xl shadow-md"
+          >
+            <h2>Lambeth Open Data Platform</h2>
+            <p class="text-gray-600">
+              Developed an interactive climate data visualisation dashboard for
+              Lambeth Council.
+            </p>
+          </div>
 
-        <!-- Project 2 -->
-        <a href="https://www.land-smyrna.com" target="_blank"
-          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
-          <img src="/assets/images/project2.jpg" alt="Smyrna E-Commerce" class="rounded-md w-full" />
-          <h3 class="text-2xl font-bold text-purple-800 mt-4">
-            <i class="fas fa-shopping-cart mr-2"></i> Smyrna E-Commerce
-          </h3>
-          <p class="text-gray-600 text-sm">
-            Built a fully functional online store with vanilla PHP.
-          </p>
-        </a>
+          <!-- Smaller Projects -->
+          <div
+            class="project bg-white hover:bg-purple-100 p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="swapProject(this)"
+          >
+            <h3 class="project-title">Smyrna E-Commerce</h3>
+            <p class="project-description">
+              Built a fully functional online store with vanilla PHP.
+            </p>
+          </div>
 
-        <!-- Project 3 -->
-        <a href="" target="_blank"
-          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
-          <img src="/assets/images/project3.jpg" alt="Data Dashboard" class="rounded-md w-full" />
-          <h3 class="text-2xl font-bold text-purple-800 mt-4">
-            <i class="fas fa-tachometer-alt mr-2"></i> Data Dashboard
-          </h3>
-          <p class="text-gray-600 text-sm">
-            Designed an interactive data dashboard for Lambeth Council with D3.js
-            & Python.
-          </p>
-        </a>
+          <div
+            class="project bg-white hover:bg-purple-100 p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="swapProject(this)"
+          >
+            <h3 class="project-title">Climate Data Dashboard</h3>
+            <p class="project-description">
+              Designed an interactive data dashboard for Lambeth Council using
+              D3.js & Python.
+            </p>
+          </div>
 
-        <!-- Project 4 -->
-        <a href="" target="_blank"
-          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
-          <img src="/assets/images/project4.jpg" alt="Football Analytics" class="rounded-md w-full" />
-          <h3 class="text-2xl font-bold text-purple-800 mt-4">
-            <i class="fas fa-futbol mr-2"></i> Football Analytics
-          </h3>
-          <p class="text-gray-600 text-sm">
-            Created a machine learning model for team performance prediction and player analysis.
-          </p>
-        </a>
+          <div
+            class="project bg-white hover:bg-purple-100 p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="swapProject(this)"
+          >
+            <h3 class="project-title">Football Analytics</h3>
+            <p class="project-description">
+              Created a machine learning model for performance prediction and
+              player analysis.
+            </p>
+          </div>
 
-        <!-- Project 5 -->
-        <a href="" target="_blank"
-          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
-          <img src="/assets/images/project5.jpg" alt="Real Estate Analysis Tool" class="rounded-md w-full" />
-          <h3 class="text-2xl font-bold text-purple-800 mt-4">
-            <i class="fas fa-home mr-2"></i> Real Estate Analysis Tool
-          </h3>
-          <p class="text-gray-600 text-sm">
-            Developed a web application for property analysis and house price prediction.
-          </p>
-        </a>
+          <div
+            class="project bg-white hover:bg-purple-100 p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="swapProject(this)"
+          >
+            <h3 class="project-title">Real Estate Analysis Tool</h3>
+            <p class="project-description">
+              Developed a web app for property analysis and house price
+              prediction.
+            </p>
+          </div>
 
-        <!-- Project 6 -->
-        <a href="" target="_blank"
-          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
-          <img src="/assets/images/project6.jpg" alt="Automated Reporting System" class="rounded-md w-full" />
-          <h3 class="text-2xl font-bold text-purple-800 mt-4">
-            <i class="fas fa-file-alt mr-2"></i> Automated Reporting System
-          </h3>
-          <p class="text-gray-600 text-sm">
-            Built an automated reporting system using Python and SQL for streamlined business insights.
-          </p>
-        </a>
+          <div
+            class="project bg-white hover:bg-purple-100 p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="swapProject(this)"
+          >
+            <h3 class="project-title">E-Commerce Optimisation</h3>
+            <p class="project-description">
+              Enhanced customer experience by building the backend for an
+              e-commerce site.
+            </p>
+          </div>
 
-        <!-- Project 7 -->
-        <a href="" target="_blank"
-          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
-          <img src="/assets/images/project7.jpg" alt="Sentiment Analysis Tool" class="rounded-md w-full" />
-          <h3 class="text-2xl font-bold text-purple-800 mt-4">
-            <i class="fas fa-comment-dots mr-2"></i> Sentiment Analysis Tool
-          </h3>
-          <p class="text-gray-600 text-sm">
-            Developed a tool using NLP to analyse news sentiment around stock prices.
-          </p>
-        </a>
+          <div
+            class="project bg-white hover:bg-purple-100 p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="swapProject(this)"
+          >
+            <h3 class="project-title">Algorithmic Trading</h3>
+            <p class="project-description">
+              Developed an algorithmic trading system using MQL5 and AWS for
+              real-time analysis.
+            </p>
+          </div>
 
-        <!-- Project 8 -->
-        <a href="" target="_blank"
-          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
-          <img src="/assets/images/project8.jpg" alt="E-Commerce Optimization" class="rounded-md w-full" />
-          <h3 class="text-2xl font-bold text-purple-800 mt-4">
-            <i class="fas fa-tags mr-2"></i> E-Commerce Optimisation
-          </h3>
-          <p class="text-gray-600 text-sm">
-            Optimised customer experience to build the backend for an e-commerce site.
-          </p>
-        </a>
+          <div
+            class="project bg-white hover:bg-purple-100 p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="swapProject(this)"
+          >
+            <h3 class="project-title">Financial Market Dashboard</h3>
+            <p class="project-description">
+              Created a dashboard for tracking financial market trends and
+              performance metrics.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      function swapProject(selected) {
+        const mainFeature = document.getElementById("main-feature");
 
-        <!-- Project 9 -->
-        <a href="" target="_blank"
-          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
-          <img src="/assets/images/project9.jpg" alt="Algo Trading in MQL5/AWS" class="rounded-md w-full" />
-          <h3 class="text-2xl font-bold text-purple-800 mt-4">
-            <i class="fas fa-sync-alt mr-2"></i> Algorithmic Trading
-          </h3>
-          <p class="text-gray-600 text-sm">
-            Developed an algorithmic trading system using MQL5 integrated with AWS for real-time data analysis.
-          </p>
-        </a>
-
-        <!-- Project 10 -->
-        <a href="" target="_blank"
-          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition block">
-          <img src="/assets/images/project10.jpg" alt="Financial Market Dashboard" class="rounded-md w-full" />
-          <h3 class="text-2xl font-bold text-purple-800 mt-4">
-            <i class="fas fa-chart-bar mr-2"></i> Financial Market Dashboard
-          </h3>
-          <p class="text-gray-600 text-sm">
-            Created a dashboard for tracking financial market trends and performance metrics.
-          </p>
-        </a>
-
-      </div>
-    </main>
-  </div>
-  <script src="/assets/Scripts/star-background.js" defer></script>
-</body>
-
+        const tempContent = mainFeature.innerHTML;
+        mainFeature.innerHTML = selected.innerHTML;
+        selected.innerHTML = tempContent;
+      }
+    </script>
+    <script src="/assets/Scripts/star-background.js" defer></script>
+  </body>
 </html>

@@ -3,35 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Manny - Get In Touch</title>
-    <meta name="description" content="Get in touch with Manny for any inquiries or collaborations. Fill out the contact form to reach out.">
-    <meta name="keywords" content="Manny, contact, inquiries, collaborations, web development, data analytics">
-    <meta name="author" content="Manny Akinso">
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
+    <title>Manny | Contact</title>
+    <meta
+      name="description"
+      content="Get in touch with Manny for any inquiries or collaborations. Fill out the contact form to reach out."
     />
-    <link rel="icon" href="/Images/Logos/smyrna-favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="/assets/styles/stars.css">
+    <meta
+      name="keywords"
+      content="Manny, contact, inquiries, collaborations, web development, data analytics"
+    />
+    <meta name="author" content="Manny Akinso" />
+
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link
+      rel="icon"
+      href="/Images/Logos/smyrna-favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/assets/styles/stars.css" />
 
     <script src="/assets/Scripts/header.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      defer
+    ></script>
+    <script src="/assets/Scripts/animations-contact.js" defer></script>
+    <meta property="og:title" content="Contact Manny - Get In Touch" />
+    <meta
+      property="og:description"
+      content="Get in touch with Manny for any inquiries or collaborations. Fill out the contact form to reach out."
+    />
+    <meta property="og:image" content="/Images/Logos/smyrna-favicon.png" />
+    <meta
+      property="og:url"
+      content="https://stmannyakinso.github.io/contact.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contact Manny - Get In Touch" />
+    <meta
+      name="twitter:description"
+      content="Get in touch with Manny for any inquiries or collaborations. Fill out the contact form to reach out."
+    />
+    <meta name="twitter:image" content="/Images/Logos/smyrna-favicon.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Manny",
+        "description": "Get in touch with Manny for any inquiries or collaborations. Fill out the contact form to reach out.",
+        "url": "https://stmannyakinso.github.io/contact.html"
+      }
+    </script>
   </head>
   <body class="starry-background text-gray-900">
     <header></header>
 
-    <div class=" container mx-auto z-10 relative">
-      <main class="mt-10 px-6 ">
-        <h1 class="text-4xl font-bold text-gray-300 text-center z-10">Get In Touch</h1>
+    <div class="container mx-auto z-10 relative">
+      <main class="mt-10 px-6">
+        <h1 class="text-4xl font-bold text-gray-300 text-center z-10">
+          Get In Touch
+        </h1>
         <p class="mt-4 text-center text-gray-100 z-10">
           Feel free to reach out to me for any inquiries or collaborations.
         </p>
 
         <!-- Contact Form -->
-        <div class="mt-10 mb-10 max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md z-10">
+        <div
+          class="mt-10 mb-10 max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md z-10"
+        >
           <form action="https://formspree.io/f/mjkybrjg" method="POST">
             <!-- Name -->
             <div class="mb-4">
-              <label for="name" class="block font-medium text-2xl text-purple-800"
+              <label
+                for="name"
+                class="block font-medium text-2xl text-purple-800"
                 >Name</label
               >
               <input
@@ -46,7 +92,9 @@
 
             <!-- Email -->
             <div class="mb-4">
-              <label for="email" class="block font-medium text-2xl text-purple-800"
+              <label
+                for="email"
+                class="block font-medium text-2xl text-purple-800"
                 >Email</label
               >
               <input
@@ -61,7 +109,9 @@
 
             <!-- Subject -->
             <div class="mb-4">
-              <label for="subject" class="block font-medium text-2xl text-purple-800"
+              <label
+                for="subject"
+                class="block font-medium text-2xl text-purple-800"
                 >Subject</label
               >
               <input
@@ -76,7 +126,9 @@
 
             <!-- Message -->
             <div class="mb-6">
-              <label for="message" class="block font-medium text-2xl text-purple-800"
+              <label
+                for="message"
+                class="block font-medium text-2xl text-purple-800"
                 >Message</label
               >
               <textarea
