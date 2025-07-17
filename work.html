@@ -64,7 +64,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
       defer
     ></script>
-    <script src="/assets/Scripts/animations-work.js" defer></script>
+    <script src="/assets/Scripts/animations/animations-work.js" defer></script>
   </head>
 
   <body class="starry-background text-gray-900">
@@ -77,111 +77,10 @@
           Here are some of the projects I have worked on.
         </p>
 
-        <!-- Project Layout -->
-        <div
-          id="project-grid"
-          class="mt-10 mb-10 grid grid-cols-4 grid-rows-4 gap-4"
-        >
-          <!-- Main Feature Project -->
-          <div
-            id="main-feature"
-            class="row-span-3 col-span-3 bg-purple-100 p-6 rounded-xl shadow-md"
-          >
-            <h2>Lambeth Open Data Platform</h2>
-            <p class="text-gray-600">
-              Developed an interactive climate data visualisation dashboard for
-              Lambeth Council.
-            </p>
-          </div>
-
-          <!-- Smaller Projects -->
-          <div
-            class="project bg-white hover:bg-purple-100 p-4 rounded-lg shadow-md cursor-pointer"
-            onclick="swapProject(this)"
-          >
-            <h3 class="project-title">Smyrna E-Commerce</h3>
-            <p class="project-description">
-              Built a fully functional online store with vanilla PHP.
-            </p>
-          </div>
-
-          <div
-            class="project bg-white hover:bg-purple-100 p-4 rounded-lg shadow-md cursor-pointer"
-            onclick="swapProject(this)"
-          >
-            <h3 class="project-title">Climate Data Dashboard</h3>
-            <p class="project-description">
-              Designed an interactive data dashboard for Lambeth Council using
-              D3.js & Python.
-            </p>
-          </div>
-
-          <div
-            class="project bg-white hover:bg-purple-100 p-4 rounded-lg shadow-md cursor-pointer"
-            onclick="swapProject(this)"
-          >
-            <h3 class="project-title">Football Analytics</h3>
-            <p class="project-description">
-              Created a machine learning model for performance prediction and
-              player analysis.
-            </p>
-          </div>
-
-          <div
-            class="project bg-white hover:bg-purple-100 p-4 rounded-lg shadow-md cursor-pointer"
-            onclick="swapProject(this)"
-          >
-            <h3 class="project-title">Real Estate Analysis Tool</h3>
-            <p class="project-description">
-              Developed a web app for property analysis and house price
-              prediction.
-            </p>
-          </div>
-
-          <div
-            class="project bg-white hover:bg-purple-100 p-4 rounded-lg shadow-md cursor-pointer"
-            onclick="swapProject(this)"
-          >
-            <h3 class="project-title">E-Commerce Optimisation</h3>
-            <p class="project-description">
-              Enhanced customer experience by building the backend for an
-              e-commerce site.
-            </p>
-          </div>
-
-          <div
-            class="project bg-white hover:bg-purple-100 p-4 rounded-lg shadow-md cursor-pointer"
-            onclick="swapProject(this)"
-          >
-            <h3 class="project-title">Algorithmic Trading</h3>
-            <p class="project-description">
-              Developed an algorithmic trading system using MQL5 and AWS for
-              real-time analysis.
-            </p>
-          </div>
-
-          <div
-            class="project bg-white hover:bg-purple-100 p-4 rounded-lg shadow-md cursor-pointer"
-            onclick="swapProject(this)"
-          >
-            <h3 class="project-title">Financial Market Dashboard</h3>
-            <p class="project-description">
-              Created a dashboard for tracking financial market trends and
-              performance metrics.
-            </p>
-          </div>
-        </div>
+        <div id="projects-section" class="mt-8"></div>
       </main>
     </div>
-    <script>
-      function swapProject(selected) {
-        const mainFeature = document.getElementById("main-feature");
-
-        const tempContent = mainFeature.innerHTML;
-        mainFeature.innerHTML = selected.innerHTML;
-        selected.innerHTML = tempContent;
-      }
-    </script>
     <script src="/assets/Scripts/star-background.js" defer></script>
+    <script src="/assets/Scripts/work.js" type="module" defer></script>
   </body>
 </html>

@@ -16,12 +16,4 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out",
   });
 
-  // Animate project grid
-  gsap.from("#project-grid > div", {
-    duration: 1,
-    scale: 0,
-    opacity: 0,
-    stagger: 0.2,
-    ease: "back.out(1.7)",
-  });
 });

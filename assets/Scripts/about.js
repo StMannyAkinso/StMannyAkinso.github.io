@@ -1,7 +1,7 @@
-import { renderAttributes } from "../../content/attributes/render.js";
-import { renderExperience } from "../../content/experience/render.js";
-import { renderSkills } from "../../content/skills/render.js";
-import { renderInterests } from "../../content/interests/render.js";
+import { renderAttributes } from "../../content/about/attributes/render.js";
+import { renderExperience } from "../../content/about/experience/render.js";
+import { renderSkills } from "../../content/about/skills/render.js";
+import { renderPreferredRoles } from "../../content/about/roles/render.js";
 
 // Static About content
 const aboutHtml = `
@@ -25,7 +25,7 @@ const tabs = [
   { key: "about", label: "About" },
   { key: "experience", label: "Experience" },
   { key: "skills", label: "Skills" },
-  { key: "interest", label: "Interests" },
+  { key: "roles", label: "Roles" },
 ];
 
 const flagIconStyle = `width: 24px; height: 24px; display: inline-block; vertical-align: middle;`;
@@ -97,8 +97,11 @@ function getTabContent(key) {
         <div class="mt-4 text-gray-700 space-y-4">${renderExperience()}</div>`;
     case "skills":
       return renderSkills();
-    case "interest":
-      return renderInterests();
+    case "roles":
+      return `<h3 class="text-3xl font-bold text-purple-800 mb-4">🔍 Preferred Roles</h3>
+        <p class="mt-4 text-gray-700">
+          For those that are looking to add me to their team log term, these are roles I am most interested in pursuing, where I can leverage my skills in data or web development to create impactful solutions. I believe that I can become a 5 star player in these positions with the right opportunities and challenges.
+        <div class="mt-4 text-gray-700 space-y-4">${renderPreferredRoles()}</div>`;
     default:
       return "";
   }
