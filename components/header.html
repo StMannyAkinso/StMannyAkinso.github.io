@@ -1,54 +1,67 @@
-<header>
-  <nav class="container mx-auto flex justify-between items-center py-4 px-6 z-10">
-    <!-- Logo or Brand -->
-    <a href="https://www.land-smyrna.com" class="text-xl font-bold text-gray-800">
-      <img src="/Images/Logos/smyrnaGoldLogo.png" alt="Smyrna logo" class="w-20 h-auto">
+<!-- header.html -->
+<header class="relative z-50 text-white">
+  <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+    <!-- Logo -->
+    <a href="/" class="flex items-center space-x-2">
+      <img
+        src="/Images/Logos/smyrnaGoldLogo.png"
+        alt="Logo"
+        class="w-20 h-auto"
+      />
     </a>
 
-    <!-- Mobile Menu Button (Hamburger) -->
+    <!-- Hamburger Button -->
     <div class="block md:hidden">
-      <button id="menu-toggle" class="text-gray-800 focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      <button id="menu-toggle" class="focus:outline-none">
+        <svg
+          class="w-8 h-8 text-white"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
     </div>
 
-    <!-- Navigation Links -->
-    <ul id="menu" class="hidden md:flex space-x-6">
+    <!-- Desktop Nav -->
+    <ul class="hidden md:flex space-x-6 items-center">
+      <li><a href="/index.html" class="hover:text-purple-400">Home</a></li>
+      <li><a href="/about.html" class="hover:text-purple-400">About</a></li>
       <li>
-        <a href="/index.html" class="text-gray-100 hover:text-white">Home</a>
+        <a href="/services.html" class="hover:text-purple-400">Services</a>
       </li>
+      <li><a href="/work.html" class="hover:text-purple-400">Work</a></li>
       <li>
-        <a href="/about.html" class="text-gray-100 hover:text-white">About</a>
-      </li>
-      <li>
-        <a href="/services.html" class="text-gray-100 hover:text-white">Services</a>
-      </li>
-      <li>
-        <a href="/work.html" class="text-gray-100 hover:text-white">Work</a>
-      </li>
-      <li>
-        <a href="/contact.html"
-          class="bg-purple-800 text-white px-6 py-3 rounded-lg hover:bg-purple-600 transition z-10 relative">
+        <a
+          href="/contact.html"
+          class="bg-purple-800 px-4 py-2 rounded-lg hover:bg-purple-600 transition"
+        >
           Get In Touch
         </a>
       </li>
     </ul>
   </nav>
+
+  <!-- Mobile Menu -->
+  <div
+    id="menu"
+    class="hidden md:hidden absolute top-full left-0 w-full bg-gray-900 text-white shadow-lg z-50"
+  >
+    <div class="px-6 py-4 space-y-4">
+      <a href="/index.html" class="block hover:text-purple-400">Home</a>
+      <a href="/about.html" class="block hover:text-purple-400">About</a>
+      <a href="/services.html" class="block hover:text-purple-400">Services</a>
+      <a href="/work.html" class="block hover:text-purple-400">Work</a>
+      <a
+        href="/contact.html"
+        class="block bg-purple-700 text-white px-4 py-2 rounded-lg hover:bg-purple-600 text-center"
+      >
+        Get In Touch
+      </a>
+    </div>
+  </div>
 </header>
-
-<script>
-  // Wait for the DOM to be fully loaded before running the script
-  document.addEventListener('DOMContentLoaded', function () {
-    // Get the hamburger button and the menu
-    const menuToggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
-
-    // Add click event listener to the hamburger button
-    menuToggle.addEventListener('click', function () {
-      // Toggle the visibility of the menu by removing/adding the 'hidden' class
-      menu.classList.toggle('hidden');
-    });
-  });
-</script>

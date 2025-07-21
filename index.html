@@ -64,23 +64,24 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
       defer
     ></script>
-    <script src="/assets/Scripts/animations.js" defer></script>
+    <script src="/assets/Scripts/animations/animations.js" defer></script>
   </head>
   <body class="starry-background text-gray-900">
     <!-- Header -->
-    <header></header>
-
+    <div id="header"></div>
     <!-- Main Content -->
-    <div class="container mx-auto">
+    <div class="container mx-auto z-2">
       <main
-        class="mb-10 flex flex-col md:flex-row items-center justify-between px-6"
+        class="relative z-0 mb-10 flex flex-col md:flex-row items-center justify-between px-6"
       >
         <!-- Left Section: Name, Description, CTA & Social Links -->
         <div class="md:w-1/2 text-center md:text-left p-10 z-10">
           <h3 class="text-gray-100">
-            <strong>Data Driven Web Developer</strong>
+            <strong class="">Data Driven Web Developer</strong>
           </h3>
-          <h1 class="text-4xl font-extrabold text-gray-300">Manny Akinso</h1>
+          <h1 class=" text-4xl font-extrabold text-gray-300">
+            Manny Akinso
+          </h1>
           <p class="mt-4 text-lg text-gray-100">📍 Kent/London, UK</p>
           <p class="mt-4 text-lg text-gray-100">
             I use data to shape the future, bringing it to life through clear

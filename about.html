@@ -68,22 +68,24 @@
     </style>
   </head>
   <body class="starry-background text-gray-900 font-sans">
-    <header></header>
+    <div id="header"></div>
 
     <div class="container mx-auto mt-10">
       <main class="flex flex-col md:flex-row items-start justify-between px-6">
         <!-- Left Section (Static Profile & Tabs Container) -->
+        <!-- Left Section -->
         <div
           id="profile-section"
-          class="md:w-1/3 bg-purple-50 shadow-lg rounded-lg z-10 p-6 mx-4"
+          class="w-full md:w-1/3 bg-purple-50 shadow-lg rounded-lg z-10 p-6 md:mx-4 mb-6 md:mb-0"
         >
-          <!-- info and tabs will be rendered by JS -->
+          <!-- info and tabs rendered by JS -->
         </div>
 
-        <!-- Right Section (Dynamic Content Container) -->
+        <!-- Right Section -->
         <section
           id="right-section"
-          class="md:w-2/3 mt-10 md:mt-0 bg-purple-50 shadow-lg rounded-lg p-6 mb-10 mx-4 overflow-y-auto z-10"
+          class="w-full md:w-2/3 mt-6 md:mt-0 bg-purple-50 shadow-lg rounded-lg p-6 md:mx-4 overflow-y-auto z-10"
+          style="max-height: 70vh"
         >
           <!-- content rendered by JS -->
         </section>
