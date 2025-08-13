@@ -1,13 +1,32 @@
----
-layout: default
-title: Blog
----
-
-<h1>Blog</h1>
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> — {{ post.date | date: "%B %d, %Y" }}
-    </li>
-  {% endfor %}
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manny | Blog</title>
+    <meta name="description" content="Blog posts by Manny Akinso." />
+    <meta name="author" content="Manny Akinso" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="icon" href="/Images/Logos/smyrna-favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/styles/stars.css" />
+    <script src="/assets/Scripts/header.js" defer></script>
+    <script src="/assets/Scripts/star-background.js" defer></script>
+  </head>
+  <body class="starry-background text-gray-900">
+    <div id="header"></div>
+    <div class="container mx-auto z-10 relative">
+      <main class="mt-10 px-6">
+        <h1 class="text-4xl font-bold text-gray-300 text-center z-10 mb-8">Blog</h1>
+        <ul class="max-w-2xl mx-auto bg-white bg-opacity-90 p-8 rounded-lg shadow-md z-10">
+          <!-- Replace this with your blog post loop or static posts -->
+          {% for post in site.posts %}
+            <li class="mb-4">
+              <a href="{{ post.url }}" class="text-purple-800 hover:underline font-semibold text-xl">{{ post.title }}</a>
+              <span class="block text-gray-500 text-sm">{{ post.date | date: "%B %d, %Y" }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </main>
+    </div>
+  </body>
+</html>
