@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderEngagement("engagement-section");
 
   // Render Pricing Table
-  renderPricing("pricing-table");
+  // renderPricing("pricing-table");
 
   // Render Process Section
   renderProcess("process-section");

@@ -1,3 +1,16 @@
-title: My Site
-description: My site with a blog
+# Site metadata
+title: "My Portfolio"
+description: "My site with a blog"
 theme: minima
+
+# Base URL
+baseurl: "" # leave empty if using username.github.io
+url: "https://stmannyakinso.github.io" # replace with your GitHub Pages URL
+
+# Collections
+collections:
+  articles:
+    output: true
+
+# Markdown options
+markdown: kramdown

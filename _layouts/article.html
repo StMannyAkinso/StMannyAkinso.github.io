@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | My Portfolio</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="icon" href="/Images/Logos/smyrna-favicon.png" type="image/x-icon" />
+    <script src="/assets/Scripts/header.js" defer></script>
+    <link rel="stylesheet" href="/assets/styles/stars.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            
+            margin: 0 auto;
+            color: #eee;
+        }
+
+            main {
+                max-width: 75vw;
+                margin: 0 auto;
+            }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.2rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #eee;
+        }
+
+        h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.3rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 1rem;
+            overflow-x: auto;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        code {
+            background: #eee;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: monospace;
+            color: black;
+        }
+
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+            color: #eee;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body class="starry-background">
+    <!-- Header -->
+    <div id="header"></div>
+   
+
+    <main>
+        <h1>{{ page.title }}</h1>
+        {% if page.subtitle %}
+        <p>{{ page.subtitle }}</p>
+        {% endif %}
+        {{ content }}
+        <section class="mt-16">
+            <h2 class="text-2xl font-bold text-gray-300 mb-6">More Articles</h2>
+            <div class="grid gap-8 md:grid-cols-2">
+                {% for post in site.articles %}
+                  {% if post.url != page.url %}
+                  <article class="bg-white bg-opacity-90 p-6 rounded-lg shadow-md">
+                      <div class="text-sm text-gray-500 mb-2">
+                        {{ post.date | date: "%B %Y" }}
+                      </div>
+                      <h3 class="text-xl font-semibold text-purple-800 mb-2">
+                        {{ post.title }}
+                      </h3>
+                      <p class="text-gray-700 mb-2">
+                        {{ post.excerpt | strip_html | truncate: 100 }}
+                      </p>
+                      <a href="{{ post.url }}" class="text-purple-700 hover:underline">View Article</a>
+                  </article>
+                  {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; {{ "now" | date: "%Y" }} My Portfolio
+    </footer>
+    <script src="/assets/Scripts/star-background.js" defer></script>
+
+</body>
+
+</html>
